@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>LivingAbroad.tv - Streaming Service</title>
+  <meta name="description" content="Watch UK TV 🌎 Abroad">
+  <link rel="canonical" href="https://livingabroad.tv/">
+  <style>
+    :root{--bs-blue:#0d6efd;--bs-indigo:#6610f2;--bs-purple:#6f42c1;--bs-pink:#d63384;--bs-red:#dc3545;--bs-orange:#fd7e14;--bs-yellow:#ffc107;--bs-green:#198754;--bs-teal:#20c997;--bs-cyan:#0dcaf0;--bs-white:#fff;--bs-gray:#6c757d;--bs-gray-dark:#343a40;--bs-primary:#0d6efd;--bs-secondary:#6c757d;--bs-success:#198754;--bs-info:#0dcaf0;--bs-warning:#ffc107;--bs-danger:#dc3545;--bs-light:#f8f9fa;--bs-dark:#212529;--bs-font-sans-serif:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;--bs-gradient:linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));--bs-gutter-x:20px;--bs-font-sans-serif:Inter,sans-serif;--vh:100%;}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth;}}body{margin:0;font-family:var(--bs-font-sans-serif);font-size:1rem;font-weight:400;line-height:1.5;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent;}h1{line-height:1.2;}@media (min-width:1200px){h1{font-size:2.5rem;}}img{vertical-align:middle;}.container{width:100%;padding-right:var(--bs-gutter-x,.75rem);padding-left:var(--bs-gutter-x,.75rem);margin-right:auto;margin-left:auto;}@media (min-width:576px){.container{max-width:540px;}}@media (min-width:768px){.container{max-width:720px;}}.btn{display:inline-block;line-height:1.5;text-align:center;text-decoration:none;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;font-size:1rem;}@media (prefers-reduced-motion:reduce){.btn{transition:none;}}.btn:focus{outline:0;box-shadow:0 0 0 .25rem rgba(13,110,253,.25);}.btn:disabled{pointer-events:none;opacity:.65;}.btn-primary:focus{color:#fff;background-color:#0b5ed7;border-color:#0a58ca;box-shadow:0 0 0 .25rem rgba(49,132,253,.5);}.btn-primary:active{color:#fff;background-color:#0a58ca;border-color:#0a53be;}.btn-primary:active:focus{box-shadow:0 0 0 .25rem rgba(49,132,253,.5);}.btn-primary:disabled{color:#fff;background-color:#0d6efd;border-color:#0d6efd;}*,::after,::before{box-sizing:border-box;}html{width:100%;height:100%;background:#170829;scroll-behavior:smooth;}body{width:100%;min-width:360px;min-height:100%;display:block;overflow-x:hidden;position:relative;z-index:1;font:1rem/1.5 var(--bs-font-sans-serif);color:rgba(255,255,255,.72);background:#170829;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-optical-sizing:auto;text-rendering:optimizeLegibility;}@media (min-width:1200px){body{font-size:1.125rem;line-height:1.444em;}}a{color:#fff;text-decoration:underline;}a:hover{color:#fff;text-decoration:none;}h1{margin:0 0 1em;font-family:Hind,serif;font-weight:500;color:#fff;}h1{margin-bottom:1.125em;font-size:2rem;line-height:1.25;letter-spacing:-.02em;}@media (min-width:1200px){h1{margin-bottom:.75em;font-size:3.625rem;line-height:1.069em;}}@media (min-width:768px){.container{max-width:728px;}}@media (min-width:992px){.container{max-width:960px;}}@media (min-width:1200px){.container{max-width:1140px;}}@media (min-width:1400px){.container{max-width:1320px;}}.page{padding-top:96px;padding-bottom:64px;position:relative;}@media (min-width:1200px){.page{padding-top:142px;padding-bottom:80px;}}.btn{padding:1rem 1.5rem;border-width:2px;border-radius:2rem;font-weight:500;letter-spacing:-.02em;color:#fff;transition:border-color .2s cubic-bezier(.25,.46,.45,.94),color .2s cubic-bezier(.25,.46,.45,.94),background-color .2s cubic-bezier(.25,.46,.45,.94);box-shadow:none!important;outline:0;}.btn:focus,.btn:hover{color:#fff;}.btn-primary{border-color:#67ff76;color:#2b114b;background:#67ff76;}.btn-primary:focus,.btn-primary:hover{color:#2b114b;border-color:#5ad366;background-color:#5ad366;}.btn-play::after{content:"";overflow:hidden;width:24px;height:24px;margin-left:8px;margin-top:-4px;display:inline-block;vertical-align:middle;position:relative;top:1px;left:1px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' viewBox='0 0 24 24'%3E%3Cg clip-path='url(%23a)'%3E%3Cpath fill='%2367ff76' d='M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10Zm0-2a8 8 0 1 0 0-16.001A8 8 0 0 0 12 20ZM10.622 8.415l4.879 3.252a.4.4 0 0 1 0 .666l-4.88 3.252a.4.4 0 0 1-.621-.332V8.747a.4.4 0 0 1 .622-.332Z'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h24v24H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E") center center/contain no-repeat;filter:brightness(0);transition:filter .2s cubic-bezier(.25,.46,.45,.94);}.hero{margin-bottom:16px;position:relative;z-index:1;}.hero::after{content:"";display:table;clear:both;}@media (min-width:768px){.hero{padding:27px 0 0;margin-bottom:0;}}@media (min-width:1200px){.hero{padding:0;margin-bottom:57px;}}.hero-title{max-width:600px;margin:0 auto;font:500 40px/46px Hind,serif;letter-spacing:-.02em;text-align:center;}@media (min-width:768px){.hero-title{font-size:48px;line-height:52px;}}@media (min-width:1200px){.hero-title{max-width:740px;font-size:58px;line-height:62px;}}.hero-screen{width:100%;max-width:500px;padding:7px;border-radius:3.34px 3.34px 1.67px 1.67px;margin:58px auto 125px;position:relative;z-index:1;background:green;}.hero-screen::before{content:"";display:block;overflow:hidden;border-radius:3.34px 3.34px 1.67px 1.67px;position:absolute;top:0;right:0;bottom:0;left:0;z-index:2;background:linear-gradient(180deg,#12091f 0,#06030a 100%);}.hero-screen::after{content:"";display:block;overflow:hidden;height:200px;margin-top:-10px;position:absolute;top:100%;right:0;left:0;z-index:15;background:linear-gradient(180deg,rgba(23,8,41,0) 0,#170829 50%,#170829 100%);transform:translateY(-50%);}@media (min-width:768px){.hero-screen{max-width:none;padding:13px;border-radius:6.5px 6.5px 3.25px 3.25px;margin-top:66px;margin-bottom:86px;}.hero-screen::before{border-radius:6.5px 6.5px 3.25px 3.25px;}.hero-screen::after{height:300px;margin-top:-20px;}}@media (min-width:1200px){.hero-screen{max-width:846px;padding:16px;border-radius:8px 8px 4px 4px;margin-top:64px;}.hero-screen::before{border-radius:8px 8px 4px 4px;}.hero-screen::after{height:400px;}}.hero-image{width:100%;height:100%;margin:0;display:block;position:relative;z-index:5;}.hero-image img{width:100%;height:100%;border-radius:1px;display:block;-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;user-select:none;}@media (min-width:768px){.hero-image img{border-radius:1.5px;}}@media (min-width:1200px){.hero-image img{border-radius:2px;}}.hero-button{position:absolute;right:0;bottom:0;left:0;z-index:10;}@media (min-width:768px){.hero-button{min-width:260px;bottom:140px;left:50%;right:auto;transform:translateX(-50%);}}.hero-flag{width:71px;position:absolute;top:17px;right:17px;z-index:10;}.hero-flag img{width:100%;height:auto;display:block;-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;user-select:none;}.hero--alt .hero-screen{padding:0;margin-bottom:132px;}@media (min-width:768px){.hero-flag{width:138px;top:32px;right:33px;}.hero--alt .hero-screen{margin-bottom:100px;}}@media (min-width:1200px){.hero-button{bottom:149px;}.hero-flag{width:171px;top:40px;right:40px;}.hero--alt .hero-screen{margin-top:47px;margin-bottom:104px;}}
+    .navbar,.footer,.page-section,.cta {display: none;}
+  </style>
+    <link rel="preload" href="/assets/fonts/Inter.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/assets/fonts/Hind-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/assets/fonts/Hind-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/assets/fonts/Hind-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/assets/fonts/Hind-Semibold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/assets/fonts/Hind-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <style>
+    @font-face {font-family: 'Inter';font-style: normal;font-weight: 100 900;font-display: swap;src: url('/assets/fonts/Inter.woff2') format('woff2');unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+    @font-face {font-family: 'Hind';font-style: normal;font-weight: 300;font-display: swap;src: url('/assets/fonts/Hind-Light.woff2') format('woff2');unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+    @font-face {font-family: 'Hind';font-style: normal;font-weight: 400;font-display: swap;src: url('/assets/fonts/Hind-Regular.woff2') format('woff2');unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+    @font-face {font-family: 'Hind';font-style: normal;font-weight: 500;font-display: swap;src: url('/assets/fonts/Hind-Medium.woff2') format('woff2');unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+    @font-face {font-family: 'Hind';font-style: normal;font-weight: 600;font-display: swap;src: url('/assets/fonts/Hind-Semibold.woff2') format('woff2');unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+    @font-face {font-family: 'Hind';font-style: normal;font-weight: 700;font-display: swap;src: url('/assets/fonts/Hind-Bold.woff2') format('woff2');unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+  </style>
+
+  <link rel="preload" href="assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="assets/css/style.css"></noscript>
+
+  <script src="/assets/js/bootstrap.min.js" defer></script>
+  <script src="/assets/js/choices.min.js" defer></script>
+  <script src="/assets/js/main.js" defer></script>
+</head>
+<body>
+
+<header class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a href="./" class="navbar-brand">
+      <svg width="28" height="28" viewBox="0 0 28 28"><path fill="#0385fc" d="M27.999 14c0 7.731-6.268 14-14 14C6.268 28 0 21.73 0 14 0 6.268 6.268 0 14 0c7.73 0 13.999 6.268 13.999 14Z"/><path fill="#67FF76" d="m3.877 14.08-3.006.322.325 2.792 1.165 3.086 1.868 2.604 2.438 2.2 3.141 1.45 2.492.59.812-1.315v-1.396l-1.3-.885-1.625-.832-1.029-1.61v-1.504l1.03-1.368 1.001-1.691v-1.691l-1.38-2.12-1.599-1.53-1.787-.322-1.137 1.368-1.409 1.852Z"/><path fill="#67FF76" d="M5.881 5.68V3.8l1.923-1.288 1.652-.779 1.896-.51 1.814-.349h2.059l.975.86.352 1.073-.732.564-1.679.429-.433 1.53.433 1.61 1.49 1.476 1.923 1.128 2.356.51 2.194.724 1.218 1.154.298 2.12-.542 2.201-.974 2.711-1.436 2.335-1.923 1.423-2.193.724-1.11-.51v-1.959l.189-2.684-.406-3.892-1.68-3.623-2.626-1.637-2.681-.564-1.842-1.154L5.88 5.68Z"/><path fill="#230E3D" fill-rule="evenodd" d="m7.315 11.392-.007-.004a1.29 1.29 0 0 0-.979-.105c-.338.108-.787.434-1.108 1.388-.44 1.309-1.497 1.922-2.541 2.163a5.976 5.976 0 0 1-1.55.136c.436 5.87 4.8 10.65 10.474 11.714l.129.023c.671-.722.762-1.24.712-1.552-.068-.418-.435-.76-.839-.942-.94-.347-2.217-1.087-2.9-2.226a3.159 3.159 0 0 1-.444-2.075c.103-.78.494-1.596 1.222-2.441.616-.716.87-1.373.918-1.957.047-.587-.111-1.152-.411-1.685-.611-1.086-1.77-1.965-2.67-2.434l-.006-.003Zm4.792 16.48c-.237-.032-.472-.07-.705-.113C5.178 26.59.407 21.305.025 14.839a14.195 14.195 0 0 1-.025-.84A13.975 13.975 0 0 1 6.261 2.333 13.934 13.934 0 0 1 14.52.01c.302.011.601.032.898.061C22.483.782 28 6.747 28 14c0 7.731-6.268 14-14 14-.642 0-1.273-.044-1.892-.128Zm4.37-26.54C22.419 2.487 26.905 7.72 26.905 14c0 7.127-5.778 12.905-12.906 12.905-.335 0-.666-.012-.995-.037.457-.664.617-1.296.52-1.888-.152-.943-.917-1.522-1.492-1.774l-.016-.007-.016-.006c-.827-.303-1.85-.926-2.356-1.769a2.066 2.066 0 0 1-.298-1.368c.069-.516.337-1.141.966-1.871.74-.86 1.111-1.73 1.18-2.583.069-.85-.166-1.632-.548-2.31-.752-1.335-2.107-2.339-3.111-2.864a2.381 2.381 0 0 0-1.836-.187c-.753.24-1.412.89-1.812 2.08-.281.835-.942 1.26-1.751 1.447a4.946 4.946 0 0 1-1.34.105 12.864 12.864 0 0 1 3.85-9.07c-.032.462-.006.932.105 1.39a3.533 3.533 0 0 0 1.355 2.041c.741.552 1.77.922 3.138 1.06 2.904.293 4.307 2.544 4.919 5.204.612 2.66.37 5.52.127 6.57-.226.972-.143 1.701.177 2.209.323.51.825.7 1.22.703 1.41.048 4.475-.754 6.135-4.192.974-2.016 1.887-4.404 1.883-6.37-.002-.996-.239-1.946-.886-2.675-.651-.732-1.643-1.158-2.981-1.253-3.731-.267-5.524-2.55-5.95-3.579-.103-.332-.151-.831.002-1.26.14-.39.466-.79 1.279-.941.572-.107 1.064-.358 1.268-.853.194-.47.042-.956-.142-1.316a3.236 3.236 0 0 0-.116-.21Zm-1.55-.205c.29.303.546.623.692.91.138.271.113.384.106.402-.002.004-.012.029-.07.065a1.135 1.135 0 0 1-.389.13c-1.177.22-1.831.875-2.108 1.649-.26.728-.165 1.495-.007 1.983l.006.018.007.019c.554 1.369 2.685 3.977 6.894 4.278 1.15.082 1.836.432 2.241.889.41.46.609 1.114.61 1.95.004 1.697-.806 3.89-1.774 5.893-1.442 2.985-4.065 3.613-5.12 3.573h-.02c-.07 0-.205-.036-.305-.194-.104-.165-.227-.557-.037-1.378.277-1.193.527-4.224-.126-7.06-.653-2.836-2.27-5.685-5.875-6.048-1.235-.125-2.057-.448-2.594-.849a2.44 2.44 0 0 1-.946-1.422c-.177-.727-.065-1.548.173-2.282a12.84 12.84 0 0 1 8.643-2.526Z" clip-rule="evenodd"/></svg>
+      <span>LivingAbroad.tv</span>
+    </a>
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="streaming-services.html">Streaming services</a></li>
+        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="channels.html">Channels</a></li>
+        <li class="nav-item"><a class="nav-link" href="tv-guide.html">TV guide</a></li>
+      </ul>
+      <div class="navbar-buttons">
+        <a href="login.html" class="btn btn-outline-primary">Log in</a>
+        <a href="#" class="btn btn-primary">Try for free</a>
+      </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Navigation"><span class="navbar-toggler-icon"></span></button>
+  </div>
+</header>
+
+<main class="page">
+  <div class="container">
+
+    <header class="hero hero--alt">
+      <h1 class="hero-title">Watch BBC iPlayer from&nbsp;Canada</h1>
+      <div class="hero-screen">
+        <picture class="hero-image">
+          <source media="(min-width: 768px)"  srcset="assets/images/screen-2.webp 1x, assets/images/screen-2@2x.webp 2x, assets/images/screen-2@3x.webp 3x" width="846" height="480">
+          <img src="assets/images/screen-2-mobile.webp" srcset="assets/images/screen-2-mobile.webp 1x, assets/images/screen-2-mobile@2x.webp 2x, assets/images/screen-2-mobile@3x.webp 3x" width="372" height="211" fetchpriority="high" alt="Sky Sports">
+        </picture>
+        <div class="hero-flag">
+          <img srcset="assets/images/flags/canada.webp 1x, assets/images/flags/canada@2x.webp 2x, assets/images/flags/canada@3x.webp 3x" src="assets/images/flags/canada.webp" fetchpriority="high" alt="Canada">
+        </div>
+      </div>
+      <a href="#" class="btn btn-primary btn-play hero-button">Start Watching Free</a>
+    </header>
+
+    <section class="page-section">
+      <div class="page-section-header">
+        <h2 class="page-section-heading">How to watch BBC iPlayer in Canada</h2>
+        <p class="page-section-subheading">Sign up on LivingAbroad.tv, follow our quick guide, and start streaming BBC iPlayer</p>
+      </div>
+      <div class="blocks">
+        <section class="block">
+          <header class="block-header">
+            <h3 class="block-heading">Sign up for free</h3>
+            <p class="block-subheading">Quick sign up with Google, Facebook or&nbsp;Email</p>
+          </header>
+          <figure class="block-sign-up">
+            <img srcset="assets/images/sign-up.webp 1x,  assets/images/sign-up@2x.webp 2x, assets/images/sign-up@3x.webp 3x" src="assets/images/sign-up.webp" width="250" height="164" alt="Sign Up" loading="lazy">
+          </figure>
+        </section>
+        <section class="block">
+          <header class="block-header">
+            <h3 class="block-heading">Set up in 1 minute</h3>
+            <p class="block-subheading">Follow our setup guide – it works <br>on any device</p>
+          </header>
+          <figure class="block-set-up">
+            <picture>
+              <source srcset="assets/images/set-up-mobile.webp 1x, assets/images/set-up-mobile@2x.webp 2x, assets/images/set-up-mobile@3x.webp 3x" media="(max-width: 767px)" width="360" height="303">
+              <source srcset="assets/images/set-up.webp 1x, assets/images/set-up@2x.webp 2x, assets/images/set-up@3x.webp 3x">
+              <img srcset="assets/images/set-up.webp 1x,  assets/images/set-up@2x.webp 2x, assets/images/set-up@3x.webp 3x" src="assets/images/set-up.webp" width="666" height="303" alt="Set up" loading="lazy">
+            </picture>
+          </figure>
+        </section>
+        <section class="block block--bolt">
+          <header class="block-header">
+            <h3 class="block-heading">Sit back and enjoy</h3>
+            <p class="block-subheading">Open BBC iPlayer and stream from&nbsp;Canada</p>
+          </header>
+          <figure class="channels-enjoy">
+            <img class="channels-enjoy-flag" srcset="assets/images/flags/canada.webp 1x, assets/images/flags/canada@2x.webp 2x, assets/images/flags/canada@3x.webp 3x" src="assets/images/flags/canada.webp" alt="Canada" loading="lazy">
+            <a href="channel.html" class="channels-enjoy-channel" style="background-color: #080411;">
+              <img srcset="assets/images/channels/bbc-iplayer.webp 1x, assets/images/channels/bbc-iplayer@2x.webp 2x, assets/images/channels/bbc-iplayer@3x.webp 3x" src="assets/images/channels/bbc-iplayer.webp" width="96" height="96" alt="BBC iPlayer" loading="lazy">
+            </a>
+          </figure>
+        </section>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="page-section-header">
+        <h2 class="page-section-heading">How does it work?</h2>
+        <p class="page-section-subheading">LivingAbroad.tv Smart DNS helps streaming services think you’re in another country</p>
+      </div>
+      <div class="how-it-works">
+        <picture class="how-it-works-image">
+          <source media="(min-width: 992px)"  srcset="assets/images/screen-3.webp 1x, assets/images/screen-3@2x.webp 2x, assets/images/screen-3@3x.webp 3x" width="954" height="480">
+          <source media="(min-width: 768px)"  srcset="assets/images/screen-3-tablet.webp 1x, assets/images/screen-3-tablet@2x.webp 2x, assets/images/screen-3-tablet@3x.webp 3x" width="688" height="482">
+          <img src="assets/images/screen-3-mobile.webp" srcset="assets/images/screen-3-mobile.webp 1x, assets/images/screen-3-mobile@2x.webp 2x, assets/images/screen-3-mobile@3x.webp 3x" width="372" height="260" alt="Screen">
+        </picture>
+        <div class="how-it-works-video"><img src="assets/images/video.webp" srcset="assets/images/video.webp 1x, assets/images/video@2x.webp 2x, assets/images/video@3x.webp 3x" alt="Video"></div>
+        <div class="how-it-works-logo" style="background-color: #080411;"><img srcset="assets/images/streaming-services/bbc-iplayer.webp 1x, assets/images/streaming-services/bbc-iplayer@2x.webp 2x, assets/images/streaming-services/bbc-iplayer@3x.webp 3x" src="assets/images/streaming-services/bbc-iplayer.webp" width="96" height="96" alt="BBC iPlayer"></div>
+        <div class="how-it-works-flag-1"><img src="assets/images/flags/canada.webp" srcset="assets/images/flags/canada.webp 1x, assets/images/flags/canada@2x.webp 2x, assets/images/flags/canada@3x.webp 3x" width="34" height="20" alt="Canada"> Your device</div>
+        <div class="how-it-works-flag-2"><img src="assets/images/flags/uk.webp" srcset="assets/images/flags/uk.webp 1x, assets/images/flags/uk@2x.webp 2x, assets/images/flags/uk@3x.webp 3x" width="34" height="20" alt="UK"> Streaming Service</div>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="page-section-header">
+        <h2 class="page-section-heading">Watch all 8 BBC iPlayer channels live</h2>
+        <p class="page-section-subheading">Stay up to date with the latest news, sports, and your favourite shows in real time</p>
+      </div>
+      <div class="channels channels--alt">
+        <div class="channels-list">
+          <div class="row">
+            <div class="col-6 col-sm-4 col-lg-3">
+              <a href="channel.html" class="channels-entry">
+                <figure class="channels-image" style="background-color: #e8504b;"><img srcset="assets/images/channels/bbc-one.webp 1x, assets/images/channels/bbc-one@2x.webp 2x, assets/images/channels/bbc-one@3x.webp 3x" src="assets/images/channels/bbc-one.webp" width="96" height="96" alt="BBC One"></figure>
+              </a>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-3">
+              <a href="channel.html" class="channels-entry">
+                <figure class="channels-image" style="background-color: #10a88d;"><img srcset="assets/images/channels/bbc-two.webp 1x, assets/images/channels/bbc-two@2x.webp 2x, assets/images/channels/bbc-two@3x.webp 3x" src="assets/images/channels/bbc-two.webp" width="96" height="96" alt="BBC Two"></figure>
+              </a>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-3">
+              <a href="channel.html" class="channels-entry">
+                <figure class="channels-image" style="background-color: #89ff00;"><img srcset="assets/images/channels/bbc-three.webp 1x, assets/images/channels/bbc-three@2x.webp 2x, assets/images/channels/bbc-three@3x.webp 3x" src="assets/images/channels/bbc-three.webp" width="96" height="96" alt="BBC Three"></figure>
+              </a>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-3">
+              <a href="channel.html" class="channels-entry">
+                <figure class="channels-image" style="background-color: #7831eb;"><img srcset="assets/images/channels/bbc-four.webp 1x, assets/images/channels/bbc-four@2x.webp 2x, assets/images/channels/bbc-four@3x.webp 3x" src="assets/images/channels/bbc-four.webp" width="96" height="96" alt="BBC Four"></figure>
+              </a>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-3">
+              <a href="channel.html" class="channels-entry">
+                <figure class="channels-image" style="background-color: #f7f7f7;"><img srcset="assets/images/channels/bbc-radio1.webp 1x, assets/images/channels/bbc-radio1@2x.webp 2x, assets/images/channels/bbc-radio1@3x.webp 3x" src="assets/images/channels/bbc-radio1.webp" width="96" height="96" alt="BBC Radio 1"></figure>
+              </a>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-3">
+              <a href="channel.html" class="channels-entry">
+                <figure class="channels-image" style="background-color: #04dc80;"><img srcset="assets/images/channels/bbc-cbbc.webp 1x, assets/images/channels/bbc-cbbc@2x.webp 2x, assets/images/channels/bbc-cbbc@3x.webp 3x" src="assets/images/channels/bbc-cbbc.webp" width="96" height="96" alt="CBBC"></figure>
+              </a>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-3">
+              <a href="channel.html" class="channels-entry">
+                <figure class="channels-image" style="background-color: #ffe727;"><img srcset="assets/images/channels/bbc-cbeebies.webp 1x, assets/images/channels/bbc-cbeebies@2x.webp 2x, assets/images/channels/bbc-cbeebies@3x.webp 3x" src="assets/images/channels/bbc-cbeebies.webp" width="96" height="96" alt="CBeebies"></figure>
+              </a>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-3">
+              <a href="channel.html" class="channels-entry">
+                <figure class="channels-image" style="background-color: #3c53fa;"><img srcset="assets/images/channels/bbc-scotland.webp 1x, assets/images/channels/bbc-scotland@2x.webp 2x, assets/images/channels/bbc-scotland@3x.webp 3x" src="assets/images/channels/bbc-scotland.webp" width="96" height="96" alt="BBC Scotland"></figure>
+              </a>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-3">
+              <a href="channel.html" class="channels-entry">
+                <figure class="channels-image" style="background-color: #fefefe;"><img srcset="assets/images/channels/bbc-news.webp 1x, assets/images/channels/bbc-news@2x.webp 2x, assets/images/channels/bbc-news@3x.webp 3x" src="assets/images/channels/bbc-news.webp" width="96" height="96" alt="BBC News"></figure>
+              </a>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-3">
+              <a href="channel.html" class="channels-entry">
+                <figure class="channels-image" style="background-color: #ec0000;"><img srcset="assets/images/channels/parliament.webp 1x, assets/images/channels/parliament@2x.webp 2x, assets/images/channels/parliament@3x.webp 3x" src="assets/images/channels/parliament.webp" width="96" height="96" alt="BBC Parliament"></figure>
+              </a>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-3">
+              <a href="channel.html" class="channels-entry">
+                <figure class="channels-image" style="background-color: #0096dc;"><img srcset="assets/images/channels/bbc-alba.webp 1x, assets/images/channels/bbc-alba@2x.webp 2x, assets/images/channels/bbc-alba@3x.webp 3x" src="assets/images/channels/bbc-alba.webp" width="96" height="96" alt="BBC Alba"></figure>
+              </a>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-3">
+              <a href="channel.html" class="channels-entry">
+                <figure class="channels-image" style="background-color: #118e9b;"><img srcset="assets/images/channels/s4c.webp 1x, assets/images/channels/s4c@2x.webp 2x, assets/images/channels/s4c@3x.webp 3x" src="assets/images/channels/s4c.webp" width="96" height="96" alt="S4C"></figure>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section page-section-instant">
+      <div class="page-section-header">
+        <figure class="page-section-image"><img src="assets/images/instant.webp" srcset="assets/images/instant.webp 1x, assets/images/instant@2x.webp 2x, assets/images/instant@3x.webp 3x" alt="Instant access"></figure>
+        <h2 class="page-section-heading">Get instant access to BBC iPlayer’s on-demand library</h2>
+        <p class="page-section-subheading">Thousands of TV shows, documentaries, and kids’ programs from BBC iPlayer can be streamed in Canada</p>
+        <a href="#" class="btn btn-primary btn-play page-section-button">Start Watching Free</a>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="page-section-header">
+        <h2 class="page-section-heading">More than just BBC iPlayer</h2>
+        <p class="page-section-subheading">Stream all other British streaming platforms and geo-blocked services from Canada</p>
+      </div>
+      <div class="services">
+        <div class="services-logos">
+          <figure class="services-logos-image" style="background-color: #a1f681;"><a href="streaming-service.html"><img src="assets/images/streaming-services/channel4.webp" srcset="assets/images/streaming-services/channel4.webp 1x, assets/images/streaming-services/channel4@2x.webp 2x, assets/images/streaming-services/channel4@3x.webp 3x" width="48" height="48" fetchpriority="high" alt="Channel 4"></a></figure>
+          <figure class="services-logos-image" style="background-color: #deeb52;"><a href="streaming-service.html"><img src="assets/images/streaming-services/itvx.webp" srcset="assets/images/streaming-services/itvx.webp 1x, assets/images/streaming-services/itvx@2x.webp 2x, assets/images/streaming-services/itvx@3x.webp 3x" width="116" height="48" fetchpriority="high" alt="itvX"></a></figure>
+          <figure class="services-logos-image" style="background-color: #080411;"><a href="streaming-service.html"><img src="assets/images/streaming-services/bbc-iplayer.webp" srcset="assets/images/streaming-services/bbc-iplayer.webp 1x, assets/images/streaming-services/bbc-iplayer@2x.webp 2x, assets/images/streaming-services/bbc-iplayer@3x.webp 3x" width="94" height="48" fetchpriority="high" alt="BBC iPlayer"></a></figure>
+          <figure class="services-logos-image" style="background-color: #f3ed2a;"><a href="streaming-service.html"><img src="assets/images/streaming-services/channel5.webp" srcset="assets/images/streaming-services/channel5.webp 1x, assets/images/streaming-services/channel5@2x.webp 2x, assets/images/streaming-services/channel5@3x.webp 3x" width="48" height="48" fetchpriority="high" alt="Channel 5"></a></figure>
+        </div>
+        <a href="#" class="btn btn-secondary services-button">Explore all streamings</a>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h3 class="cta-heading">Start your free <span class="text-nowrap">7-day</span> trial</h3>
+      <p>Try LivingAbroad.tv today with <span class="text-nowrap">7-day</span> free trial. No credit card required.</p>
+      <a href="#" class="btn btn-dark btn-play cta-button">Start Watching Free</a>
+    </section>
+
+    <section class="page-section">
+      <div class="page-section-header">
+        <h2 class="page-section-heading">Every screen. Every platform</h2>
+        <p class="page-section-subheading">From your phone to your Smart TV – stream BBC iPlayer on any device</p>
+      </div>
+      <div class="platforms">
+        <picture class="platforms-image">
+          <source media="(min-width: 768px)" srcset="assets/images/platforms.webp 1x, assets/images/platforms@2x.webp 2x" width="1280" height="620">
+          <img src="assets/images/platforms-mobile.webp" srcset="assets/images/platforms-mobile.webp 1x, assets/images/platforms-mobile@2x.webp 2x, assets/images/platforms-mobile@3x.webp 3x" width="410" height="200" alt="Platforms">
+        </picture>
+        <ul class="platforms-logos">
+          <li><img src="assets/images/platforms/android-tv.svg" width="121" height="48" alt="Android TV"></li>
+          <li><img src="assets/images/platforms/apple.svg" width="49" height="48" alt="Apple"></li>
+          <li><img src="assets/images/platforms/windows.svg" width="161" height="48" alt="Windows"></li>
+          <li><img src="assets/images/platforms/android.svg" width="65" height="48" alt="Android"></li>
+          <li><img src="assets/images/platforms/ps.svg" width="56" height="48" alt="Playstation"></li>
+          <li><img src="assets/images/platforms/xbox.svg" width="49" height="48" alt="xBox"></li>
+          <li><img src="assets/images/platforms/firestick.svg" width="111" height="48" alt="Fire TV Stick"></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="page-section-header">
+        <h2 class="page-section-heading">LivingAbroad.tv vs VPN</h2>
+        <p class="page-section-subheading">LivingAbroad.tv Smart DNS technology is faster, easier, and better than&nbsp;any VPN</p>
+      </div>
+      <div class="technology">
+        <table class="technology-table">
+          <thead>
+          <tr>
+            <th></th>
+            <th>LivingAbroad.tv</th>
+            <th>Typical VPN <span class="hidden">Service</span></th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>Access to geo-blocked content</td>
+            <td><img class="technology-table-icon" src="assets/images/svg/check.svg" alt="Check"></td>
+            <td><img class="technology-table-icon" src="assets/images/svg/check.svg" alt="Check"></td>
+          </tr>
+          <tr>
+            <td>Lightning-fast streaming</td>
+            <td><img class="technology-table-icon" src="assets/images/svg/check.svg" alt="Check"></td>
+            <td><img class="technology-table-icon" src="assets/images/svg/cross.svg" alt="Cross"></td>
+          </tr>
+          <tr>
+            <td>No VPN blocks</td>
+            <td><img class="technology-table-icon" src="assets/images/svg/check.svg" alt="Check"></td>
+            <td><img class="technology-table-icon" src="assets/images/svg/cross.svg" alt="Cross"></td>
+          </tr>
+          <tr>
+            <td>Access on any device, including TVs and game consoles</td>
+            <td><img class="technology-table-icon" src="assets/images/svg/check.svg" alt="Check"></td>
+            <td><img class="technology-table-icon" src="assets/images/svg/cross.svg" alt="Cross"></td>
+          </tr>
+          <tr>
+            <td>One payment covers all of your devices</td>
+            <td><img class="technology-table-icon" src="assets/images/svg/check.svg" alt="Check"></td>
+            <td><img class="technology-table-icon" src="assets/images/svg/cross.svg" alt="Cross"></td>
+          </tr>
+          </tbody>
+        </table>
+        <div class="technology-link">
+          <a href="#" class="btn btn-primary">Setup in 3 minutes</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="page-section-header">
+        <h2 class="page-section-heading">Trusted by streamers worldwide</h2>
+      </div>
+
+      <div class="testimonials">
+        <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="testimonials-item">
+                <p>This service completely changed how I access content online. <strong>I don’t even think about geo-blocks anymore.</strong> Everything just works, whether I’m watching on my TV, phone, or laptop.</p>
+                <div class="testimonials-footer">
+                  <img src="assets/images/users/yoel-p.webp" srcset="assets/images/users/yoel-p.webp 1x, assets/images/users/yoel-p@2x.webp 2x, assets/images/users/yoel-p@3x.webp 3x" alt="Yoel P">
+                  <p class="testimonials-author">Yoel P. <small>Expat Manager</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonials-item">
+                <p>Finally a reliable way <strong>to access my favorite streaming services from anywhere</strong></p>
+                <div class="testimonials-footer">
+                  <img src="assets/images/users/ian-g.webp" srcset="assets/images/users/ian-g.webp 1x, assets/images/users/ian-g@2x.webp 2x, assets/images/users/ian-g@3x.webp 3x" alt="Ian G">
+                  <p class="testimonials-author">Ian G. <small>Freelance Developer</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonials-item">
+                <p>Seamless streaming experience! I didn’t expect it to <strong>work so smoothly across all my devices</strong>. No complicated setups or random disconnects — just plug and play. Highly impressed!</p>
+                <div class="testimonials-footer">
+                  <img src="assets/images/users/stephan-l.webp" srcset="assets/images/users/stephan-l.webp 1x, assets/images/users/stephan-l@2x.webp 2x, assets/images/users/stephan-l@3x.webp 3x" alt="Stephan L">
+                  <p class="testimonials-author">Stephan L. <small>International Journalist</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonials-item">
+                <p>This service completely changed how I access content online. <strong>I don’t even think about geo-blocks anymore.</strong> Everything just works, whether I’m watching on my TV, phone, or laptop.</p>
+                <div class="testimonials-footer">
+                  <img src="assets/images/users/yoel-p.webp" srcset="assets/images/users/yoel-p.webp 1x, assets/images/users/yoel-p@2x.webp 2x, assets/images/users/yoel-p@3x.webp 3x" alt="Yoel P">
+                  <p class="testimonials-author">Yoel P. <small>Expat Manager</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonials-item">
+                <p>Seamless streaming experience! I didn’t expect it to <strong>work so smoothly across all my devices</strong>. No complicated setups or random disconnects — just plug and play. Highly impressed!</p>
+                <div class="testimonials-footer">
+                  <img src="assets/images/users/stephan-l.webp" srcset="assets/images/users/stephan-l.webp 1x, assets/images/users/stephan-l@2x.webp 2x, assets/images/users/stephan-l@3x.webp 3x" alt="Stephan L">
+                  <p class="testimonials-author">Stephan L. <small>International Journalist</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="page-section-header">
+        <h2 class="page-section-heading">Frequently asked questions</h2>
+      </div>
+      <div class="accordion" id="faq">
+        <section class="accordion-item">
+          <header class="accordion-header">
+            <h3 class="h5 accordion-button" data-bs-toggle="collapse" data-bs-target="#q-1" aria-expanded="true" aria-controls="q-1">Is BBC One available in Canada?</h3>
+          </header>
+          <div id="q-1" class="accordion-collapse collapse show" data-bs-parent="#faq">
+            <p class="accordion-body">With our Smart DNS service membership, you get seamless worldwide access to popular streaming platforms from the United Kingdom, Ireland, and France — including BBC iPlayer, ITV4, Channel 4, and Channel 5. Watch on any device: iOS phones, iPads and tablets, Android phones, Mac, Linux and Windows desktops/laptops, Google Chromecasts and Chromebooks Televisions</p>
+          </div>
+        </section>
+        <section class="accordion-item">
+          <header class="accordion-header">
+            <h3 class="h5 accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q-2" aria-expanded="false" aria-controls="q-2">Is it legal to use a LivingAbroad.TV to watch BBC iPlayer in Canada?</h3>
+          </header>
+          <div id="q-2" class="accordion-collapse collapse" data-bs-parent="#faq">
+            <p class="accordion-body">With our Smart DNS service membership, you get seamless worldwide access to popular streaming platforms from the United Kingdom, Ireland, and France — including BBC iPlayer, ITV4, Channel 4, and Channel 5. Watch on any device: iOS phones, iPads and tablets, Android phones, Mac, Linux and Windows desktops/laptops, Google Chromecasts and Chromebooks Televisions</p>
+          </div>
+        </section>
+        <section class="accordion-item">
+          <header class="accordion-header">
+            <h3 class="h5 accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q-3" aria-expanded="false" aria-controls="q-3">Will the BBC check my name and address is on the TV license register?</h3>
+          </header>
+          <div id="q-3" class="accordion-collapse collapse" data-bs-parent="#faq">
+            <p class="accordion-body">With our Smart DNS service membership, you get seamless worldwide access to popular streaming platforms from the United Kingdom, Ireland, and France — including BBC iPlayer, ITV4, Channel 4, and Channel 5. Watch on any device: iOS phones, iPads and tablets, Android phones, Mac, Linux and Windows desktops/laptops, Google Chromecasts and Chromebooks Televisions</p>
+          </div>
+        </section>
+        <section class="accordion-item">
+          <header class="accordion-header">
+            <h3 class="h5 accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q-4" aria-expanded="false" aria-controls="q-4">How much does the BBC iPlayer cost?</h3>
+          </header>
+          <div id="q-4" class="accordion-collapse collapse" data-bs-parent="#faq">
+            <p class="accordion-body">With our Smart DNS service membership, you get seamless worldwide access to popular streaming platforms from the United Kingdom, Ireland, and France — including BBC iPlayer, ITV4, Channel 4, and Channel 5. Watch on any device: iOS phones, iPads and tablets, Android phones, Mac, Linux and Windows desktops/laptops, Google Chromecasts and Chromebooks Televisions</p>
+          </div>
+        </section>
+        <section class="accordion-item">
+          <header class="accordion-header">
+            <h3 class="h5 accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q-5" aria-expanded="false" aria-controls="q-5">How to sign up for BBC iPlayer in Canada?</h3>
+          </header>
+          <div id="q-5" class="accordion-collapse collapse" data-bs-parent="#faq">
+            <p class="accordion-body">With our Smart DNS service membership, you get seamless worldwide access to popular streaming platforms from the United Kingdom, Ireland, and France — including BBC iPlayer, ITV4, Channel 4, and Channel 5. Watch on any device: iOS phones, iPads and tablets, Android phones, Mac, Linux and Windows desktops/laptops, Google Chromecasts and Chromebooks Televisions</p>
+          </div>
+        </section>
+        <section class="accordion-item">
+          <header class="accordion-header">
+            <h3 class="h5 accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q-6" aria-expanded="false" aria-controls="q-6">How to get a BBC iPlayer Postcode In Canada?</h3>
+          </header>
+          <div id="q-6" class="accordion-collapse collapse" data-bs-parent="#faq">
+            <p class="accordion-body">With our Smart DNS service membership, you get seamless worldwide access to popular streaming platforms from the United Kingdom, Ireland, and France — including BBC iPlayer, ITV4, Channel 4, and Channel 5. Watch on any device: iOS phones, iPads and tablets, Android phones, Mac, Linux and Windows desktops/laptops, Google Chromecasts and Chromebooks Televisions</p>
+          </div>
+        </section>
+        <section class="accordion-item">
+          <header class="accordion-header">
+            <h3 class="h5 accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q-7" aria-expanded="false" aria-controls="q-7">Does this hide your IP like a VPN?</h3>
+          </header>
+          <div id="q-7" class="accordion-collapse collapse" data-bs-parent="#faq">
+            <p class="accordion-body">With our Smart DNS service membership, you get seamless worldwide access to popular streaming platforms from the United Kingdom, Ireland, and France — including BBC iPlayer, ITV4, Channel 4, and Channel 5. Watch on any device: iOS phones, iPads and tablets, Android phones, Mac, Linux and Windows desktops/laptops, Google Chromecasts and Chromebooks Televisions</p>
+          </div>
+        </section>
+        <section class="accordion-item">
+          <header class="accordion-header">
+            <h3 class="h5 accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q-8" aria-expanded="false" aria-controls="q-8">Does LivingAbroad.tv let me watch paid streaming services for free?</h3>
+          </header>
+          <div id="q-8" class="accordion-collapse collapse" data-bs-parent="#faq">
+            <p class="accordion-body">With our Smart DNS service membership, you get seamless worldwide access to popular streaming platforms from the United Kingdom, Ireland, and France — including BBC iPlayer, ITV4, Channel 4, and Channel 5. Watch on any device: iOS phones, iPads and tablets, Android phones, Mac, Linux and Windows desktops/laptops, Google Chromecasts and Chromebooks Televisions</p>
+          </div>
+        </section>
+        <section class="accordion-item">
+          <header class="accordion-header">
+            <h3 class="h5 accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q-9" aria-expanded="false" aria-controls="q-9">Where can I get BBC ONE schedule?</h3>
+          </header>
+          <div id="q-9" class="accordion-collapse collapse" data-bs-parent="#faq">
+            <p class="accordion-body">With our Smart DNS service membership, you get seamless worldwide access to popular streaming platforms from the United Kingdom, Ireland, and France — including BBC iPlayer, ITV4, Channel 4, and Channel 5. Watch on any device: iOS phones, iPads and tablets, Android phones, Mac, Linux and Windows desktops/laptops, Google Chromecasts and Chromebooks Televisions</p>
+          </div>
+        </section>
+        <section class="accordion-item">
+          <header class="accordion-header">
+            <h3 class="h5 accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q-10" aria-expanded="false" aria-controls="q-10">What devices and platforms are supported?</h3>
+          </header>
+          <div id="q-10" class="accordion-collapse collapse" data-bs-parent="#faq">
+            <p class="accordion-body">With our Smart DNS service membership, you get seamless worldwide access to popular streaming platforms from the United Kingdom, Ireland, and France — including BBC iPlayer, ITV4, Channel 4, and Channel 5. Watch on any device: iOS phones, iPads and tablets, Android phones, Mac, Linux and Windows desktops/laptops, Google Chromecasts and Chromebooks Televisions</p>
+          </div>
+        </section>
+        <section class="accordion-item">
+          <header class="accordion-header">
+            <h3 class="h5 accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q-11" aria-expanded="false" aria-controls="q-11">Can I use the service on multiple devices at the same time?</h3>
+          </header>
+          <div id="q-11" class="accordion-collapse collapse" data-bs-parent="#faq">
+            <p class="accordion-body">With our Smart DNS service membership, you get seamless worldwide access to popular streaming platforms from the United Kingdom, Ireland, and France — including BBC iPlayer, ITV4, Channel 4, and Channel 5. Watch on any device: iOS phones, iPads and tablets, Android phones, Mac, Linux and Windows desktops/laptops, Google Chromecasts and Chromebooks Televisions</p>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h3 class="cta-heading">Start your free <span class="text-nowrap">7-day</span> trial</h3>
+      <p>Try LivingAbroad.tv today with <span class="text-nowrap">7-day</span> free trial. No credit card required.</p>
+      <a href="#" class="btn btn-dark btn-play cta-button">Start Watching Free</a>
+    </section>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12 col-xl-4">
+        <a href="./" class="footer-brand"><img src="assets/images/svg/ic.svg" width="28" height="28" alt=""> LivingAbroad.tv</a>
+        <p class="footer-subtitle">Watch Your Favorite Streaming Service from Anywhere</p>
+      </div>
+      <div class="col col-12 col-xl-8">
+        <ul class="footer-nav">
+          <li><a href="streaming-services.html" class="nav-link">Streaming services</a></li>
+          <li><a href="channels.html" class="nav-link">Channels</a></li>
+          <li><a href="tv-guide.html" class="nav-link">TV guide</a></li>
+          <li><a href="#" class="nav-link">Support</a></li>
+          <li><a href="terms.html" class="nav-link">Privacy policy</a></li>
+          <li><a href="terms.html" class="nav-link">Terms of use</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-12 col-md-4">
+        <div class="footer-review">
+          <span class="footer-review-result">Rated 4.9</span>
+          <div class="footer-review-rating">
+            <span class="footer-review-stars"></span>
+          </div>
+          <span class="footer-review-result">from 172 users</span>
+        </div>
+      </div>
+      <div class="col col-12 col-md-4">
+        <div class="footer-copyright">&copy; 2025 LivingAbroad.tv. All&nbsp;rights are reserved.</div>
+      </div>
+      <div class="col col-12 col-md-4">
+        <div class="footer-lang">
+          <div class="dropdown">
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#language">Espana - Spain</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">{
+  "@context": "http://schema.org/",
+  "@type": "Product",
+  "url": "https://livingabroad.tv",
+  "name": "Living Abroad TV",
+  "aggregateRating": {
+    "@type": "aggregateRating",
+    "ratingValue": "4.9",
+    "bestRating": "5",
+    "ratingCount": "172"
+  }
+}</script>
+<div class="modal modal-language fade" id="language" tabindex="-1" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <p class="modal-title">Select language</p>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul class="language">
+          <li class="active"><a href="#"><strong>English</strong><span>English (EN-US)</span></a></li>
+          <li><a href="#"><strong>Gaeilge</strong><span>Irish (EN-IE)</span></a></li>
+          <li><a href="#"><strong>Aotearoa</strong><span>New Zealand (EN-NZ)</span></a></li>
+          <li><a href="#"><strong>Français</strong><span>French (EN-FR)</span></a></li>
+          <li><a href="#"><strong>Deutsch</strong><span>German (EN-DE)</span></a></li>
+          <li><a href="#"><strong>Svenska</strong><span>Swedish (EN-SE)</span></a></li>
+          <li><a href="#"><strong>English</strong><span>Australian (EN-AU)</span></a></li>
+          <li><a href="#"><strong>Española</strong><span>Spanish (EN-ES)</span></a></li>
+          <li><a href="#"><strong>Italiana</strong><span>Italian (EN-IT)</span></a></li>
+          <li><a href="#"><strong>Netherlands</strong><span>Netherlands (en-NL)</span></a></li>
+          <li><a href="#"><strong>Spain</strong><span>Spain (en-ES)</span></a></li>
+          <li><a href="#"><strong>Sweden</strong><span>Sweden (SE-SE)</span></a></li>
+          <li><a href="#"><strong>Portugal</strong><span>Portugal (PT-PT)</span></a></li>
+          <li><a href="#"><strong>United Arab Emirates</strong><span>UAE (EN-AE)</span></a></li>
+          <li><a href="#"><strong>Greece</strong><span>Greece (GR-GR)</span></a></li>
+          <li><a href="#"><strong>Czech</strong><span>Czech (Cz-CZ)</span></a></li>
+          <li><a href="#"><strong>English</strong><span>English (EN-US)</span></a></li>
+          <li><a href="#"><strong>Gaeilge</strong><span>Irish (EN-IE)</span></a></li>
+          <li><a href="#"><strong>Aotearoa</strong><span>New Zealand (EN-NZ)</span></a></li>
+          <li><a href="#"><strong>Français</strong><span>French (EN-FR)</span></a></li>
+          <li><a href="#"><strong>Deutsch</strong><span>German (EN-DE)</span></a></li>
+          <li><a href="#"><strong>Svenska</strong><span>Swedish (EN-SE)</span></a></li>
+          <li><a href="#"><strong>English</strong><span>Australian (EN-AU)</span></a></li>
+          <li><a href="#"><strong>Española</strong><span>Spanish (EN-ES)</span></a></li>
+          <li><a href="#"><strong>Italiana</strong><span>Italian (EN-IT)</span></a></li>
+          <li><a href="#"><strong>Netherlands</strong><span>Netherlands (en-NL)</span></a></li>
+          <li><a href="#"><strong>Spain</strong><span>Spain (en-ES)</span></a></li>
+          <li><a href="#"><strong>Sweden</strong><span>Sweden (SE-SE)</span></a></li>
+          <li><a href="#"><strong>Portugal</strong><span>Portugal (PT-PT)</span></a></li>
+          <li><a href="#"><strong>United Arab Emirates</strong><span>UAE (EN-AE)</span></a></li>
+          <li><a href="#"><strong>Greece</strong><span>Greece (GR-GR)</span></a></li>
+          <li><a href="#"><strong>Czech</strong><span>Czech (Cz-CZ)</span></a></li>
+          <li><a href="#"><strong>English</strong><span>English (EN-US)</span></a></li>
+          <li><a href="#"><strong>Gaeilge</strong><span>Irish (EN-IE)</span></a></li>
+          <li><a href="#"><strong>Aotearoa</strong><span>New Zealand (EN-NZ)</span></a></li>
+          <li><a href="#"><strong>Français</strong><span>French (EN-FR)</span></a></li>
+          <li><a href="#"><strong>Deutsch</strong><span>German (EN-DE)</span></a></li>
+          <li><a href="#"><strong>Svenska</strong><span>Swedish (EN-SE)</span></a></li>
+          <li><a href="#"><strong>English</strong><span>Australian (EN-AU)</span></a></li>
+          <li><a href="#"><strong>Española</strong><span>Spanish (EN-ES)</span></a></li>
+          <li><a href="#"><strong>Italiana</strong><span>Italian (EN-IT)</span></a></li>
+          <li><a href="#"><strong>Netherlands</strong><span>Netherlands (en-NL)</span></a></li>
+          <li><a href="#"><strong>Spain</strong><span>Spain (en-ES)</span></a></li>
+          <li><a href="#"><strong>Sweden</strong><span>Sweden (SE-SE)</span></a></li>
+          <li><a href="#"><strong>Portugal</strong><span>Portugal (PT-PT)</span></a></li>
+          <li><a href="#"><strong>United Arab Emirates</strong><span>UAE (EN-AE)</span></a></li>
+          <li><a href="#"><strong>Greece</strong><span>Greece (GR-GR)</span></a></li>
+          <li><a href="#"><strong>Czech</strong><span>Czech (Cz-CZ)</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

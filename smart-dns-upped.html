@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>LivingAbroad.tv - Smart DNS</title>
+  <meta name="description" content="Watch UK TV 🌎 Abroad">
+  <link rel="canonical" href="https://livingabroad.tv/">
+    <link rel="preload" href="/assets/fonts/Inter.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/assets/fonts/Hind-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/assets/fonts/Hind-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/assets/fonts/Hind-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/assets/fonts/Hind-Semibold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/assets/fonts/Hind-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <style>
+    @font-face {font-family: 'Inter';font-style: normal;font-weight: 100 900;font-display: swap;src: url('/assets/fonts/Inter.woff2') format('woff2');unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+    @font-face {font-family: 'Hind';font-style: normal;font-weight: 300;font-display: swap;src: url('/assets/fonts/Hind-Light.woff2') format('woff2');unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+    @font-face {font-family: 'Hind';font-style: normal;font-weight: 400;font-display: swap;src: url('/assets/fonts/Hind-Regular.woff2') format('woff2');unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+    @font-face {font-family: 'Hind';font-style: normal;font-weight: 500;font-display: swap;src: url('/assets/fonts/Hind-Medium.woff2') format('woff2');unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+    @font-face {font-family: 'Hind';font-style: normal;font-weight: 600;font-display: swap;src: url('/assets/fonts/Hind-Semibold.woff2') format('woff2');unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+    @font-face {font-family: 'Hind';font-style: normal;font-weight: 700;font-display: swap;src: url('/assets/fonts/Hind-Bold.woff2') format('woff2');unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+  </style>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script src="/assets/js/bootstrap.min.js" defer></script>
+  <script src="/assets/js/choices.min.js" defer></script>
+  <script src="/assets/js/main.js" defer></script>
+</head>
+<body>
+
+<header class="navbar navbar-expand-lg fixed-top bg-body">
+  <div class="container-fluid">
+    <a href="./" class="navbar-brand">
+      <svg width="28" height="28" viewBox="0 0 28 28"><path fill="#0385fc" d="M27.999 14c0 7.731-6.268 14-14 14C6.268 28 0 21.73 0 14 0 6.268 6.268 0 14 0c7.73 0 13.999 6.268 13.999 14Z"/><path fill="#67FF76" d="m3.877 14.08-3.006.322.325 2.792 1.165 3.086 1.868 2.604 2.438 2.2 3.141 1.45 2.492.59.812-1.315v-1.396l-1.3-.885-1.625-.832-1.029-1.61v-1.504l1.03-1.368 1.001-1.691v-1.691l-1.38-2.12-1.599-1.53-1.787-.322-1.137 1.368-1.409 1.852Z"/><path fill="#67FF76" d="M5.881 5.68V3.8l1.923-1.288 1.652-.779 1.896-.51 1.814-.349h2.059l.975.86.352 1.073-.732.564-1.679.429-.433 1.53.433 1.61 1.49 1.476 1.923 1.128 2.356.51 2.194.724 1.218 1.154.298 2.12-.542 2.201-.974 2.711-1.436 2.335-1.923 1.423-2.193.724-1.11-.51v-1.959l.189-2.684-.406-3.892-1.68-3.623-2.626-1.637-2.681-.564-1.842-1.154L5.88 5.68Z"/><path fill="#230E3D" fill-rule="evenodd" d="m7.315 11.392-.007-.004a1.29 1.29 0 0 0-.979-.105c-.338.108-.787.434-1.108 1.388-.44 1.309-1.497 1.922-2.541 2.163a5.976 5.976 0 0 1-1.55.136c.436 5.87 4.8 10.65 10.474 11.714l.129.023c.671-.722.762-1.24.712-1.552-.068-.418-.435-.76-.839-.942-.94-.347-2.217-1.087-2.9-2.226a3.159 3.159 0 0 1-.444-2.075c.103-.78.494-1.596 1.222-2.441.616-.716.87-1.373.918-1.957.047-.587-.111-1.152-.411-1.685-.611-1.086-1.77-1.965-2.67-2.434l-.006-.003Zm4.792 16.48c-.237-.032-.472-.07-.705-.113C5.178 26.59.407 21.305.025 14.839a14.195 14.195 0 0 1-.025-.84A13.975 13.975 0 0 1 6.261 2.333 13.934 13.934 0 0 1 14.52.01c.302.011.601.032.898.061C22.483.782 28 6.747 28 14c0 7.731-6.268 14-14 14-.642 0-1.273-.044-1.892-.128Zm4.37-26.54C22.419 2.487 26.905 7.72 26.905 14c0 7.127-5.778 12.905-12.906 12.905-.335 0-.666-.012-.995-.037.457-.664.617-1.296.52-1.888-.152-.943-.917-1.522-1.492-1.774l-.016-.007-.016-.006c-.827-.303-1.85-.926-2.356-1.769a2.066 2.066 0 0 1-.298-1.368c.069-.516.337-1.141.966-1.871.74-.86 1.111-1.73 1.18-2.583.069-.85-.166-1.632-.548-2.31-.752-1.335-2.107-2.339-3.111-2.864a2.381 2.381 0 0 0-1.836-.187c-.753.24-1.412.89-1.812 2.08-.281.835-.942 1.26-1.751 1.447a4.946 4.946 0 0 1-1.34.105 12.864 12.864 0 0 1 3.85-9.07c-.032.462-.006.932.105 1.39a3.533 3.533 0 0 0 1.355 2.041c.741.552 1.77.922 3.138 1.06 2.904.293 4.307 2.544 4.919 5.204.612 2.66.37 5.52.127 6.57-.226.972-.143 1.701.177 2.209.323.51.825.7 1.22.703 1.41.048 4.475-.754 6.135-4.192.974-2.016 1.887-4.404 1.883-6.37-.002-.996-.239-1.946-.886-2.675-.651-.732-1.643-1.158-2.981-1.253-3.731-.267-5.524-2.55-5.95-3.579-.103-.332-.151-.831.002-1.26.14-.39.466-.79 1.279-.941.572-.107 1.064-.358 1.268-.853.194-.47.042-.956-.142-1.316a3.236 3.236 0 0 0-.116-.21Zm-1.55-.205c.29.303.546.623.692.91.138.271.113.384.106.402-.002.004-.012.029-.07.065a1.135 1.135 0 0 1-.389.13c-1.177.22-1.831.875-2.108 1.649-.26.728-.165 1.495-.007 1.983l.006.018.007.019c.554 1.369 2.685 3.977 6.894 4.278 1.15.082 1.836.432 2.241.889.41.46.609 1.114.61 1.95.004 1.697-.806 3.89-1.774 5.893-1.442 2.985-4.065 3.613-5.12 3.573h-.02c-.07 0-.205-.036-.305-.194-.104-.165-.227-.557-.037-1.378.277-1.193.527-4.224-.126-7.06-.653-2.836-2.27-5.685-5.875-6.048-1.235-.125-2.057-.448-2.594-.849a2.44 2.44 0 0 1-.946-1.422c-.177-.727-.065-1.548.173-2.282a12.84 12.84 0 0 1 8.643-2.526Z" clip-rule="evenodd"/></svg>
+      <span>LivingAbroad.tv</span>
+    </a>
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="streaming-services.html">Streaming services</a></li>
+        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="channels.html">Channels</a></li>
+        <li class="nav-item"><a class="nav-link" href="tv-guide.html">TV guide</a></li>
+      </ul>
+      <div class="navbar-buttons">
+        <a href="account-details.html" class="btn btn-outline-primary">My account</a>
+      </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Navigation"><span class="navbar-toggler-icon"></span></button>
+  </div>
+</header>
+
+<main class="page page-profile">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-3">
+        <div class="page-nav">
+          <p class="page-nav-title">My account</p>
+          <ul class="nav">
+            <li class="nav-item"><a class="nav-link active" href="smart-dns.html"><img src="assets/images/svg/nav/globus.svg" width="24" height="24" alt="Globus"> Smart DNS</a></li>
+            <li class="nav-item"><a class="nav-link" href="chrome-extension.html"><img src="assets/images/svg/nav/chrome.svg" width="24" height="24" alt="Chrome"> Chrome extension</a></li>
+            <li class="nav-item"><a class="nav-link" aria-current="page" href="subscription.html"><img src="assets/images/svg/nav/card.svg" width="24" height="24" alt="Card"> Subscription</a></li>
+            <li class="nav-item"><a class="nav-link" href="account-details.html"><img src="assets/images/svg/nav/account.svg" width="24" height="24" alt="Account"> Account details</a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><img src="assets/images/svg/nav/support.svg" width="24" height="24" alt="Support"> Support</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-9">
+        <section class="card mb-4 mb-md-3">
+          <div class="card-header">
+            <h5>Account status</h5>
+          </div>
+          <div class="card-body">
+            <div class="profile">
+
+              <div class="profile-status mt-1">
+                <div class="profile-status-line">
+                  <figure class="profile-status-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><g clip-path="url(#a)"><path fill="#ffc247" d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10Zm-1-7v2h2v-2h-2Zm0-8v6h2V7h-2Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h24v24H0z"/></clipPath></defs></svg>
+                  </figure>
+                  <div>
+                    <p class="h6">Service is on trial and active 7 more days</p>
+                    <p>Add payment details to keep the service active after the trial ends without any unexpected interruption.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="profile-submits mt-5">
+                <button class="btn btn-primary btn-sm">Add payment details</button>
+                <figure>
+                  <img src="assets/images/stripe.png" width="114" height="24" alt="Stripe">
+                </figure>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <section class="card mb-4 mb-md-3">
+          <div class="card-header">
+            <h5>Device set up</h5>
+          </div>
+          <div class="card-body">
+            <div class="profile">
+
+              <div class="profile-status mt-1">
+                <div class="profile-status-line">
+                  <figure class="profile-status-icon">
+                    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10Zm-.997-6 7.07-7.071-1.414-1.414-5.656 5.657-2.829-2.829-1.414 1.414L11.003 16Z" fill="#67FF76"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h24v24H0z"/></clipPath></defs></svg>
+                  </figure>
+                  <div>
+                    <p class="h5">This device uses streaming DNS</p>
+                  </div>
+                </div>
+              </div>
+
+              <form class="form form-device mt-5" action="smart-dns.html" method="GET" novalidate>
+
+                <div class="form-device-steps">
+                  <div class="form-device-step active" data-step="1">
+                    <label class="h6 form-device-title"><var>1</var> <span>Choose your device</span></label>
+                    <div class="form-device-content">
+                      <ul class="form-device-list active">
+                        <li>
+                          <label>
+                            <input type="radio" name="device" value="Mobile device" data-for="mobile-device">
+                            <figure><img src="assets/images/device-form/mobile-device.png" width="80" height="80" alt="Mobile device"></figure>
+                            <em>Mobile device</em>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" name="device" value="Computer" data-for="computer">
+                            <figure><img src="assets/images/device-form/computer.png" width="80" height="80" alt="Computer"></figure>
+                            <em>Computer</em>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" name="device" value="Smart TV" data-for="smart-tv">
+                            <figure><img src="assets/images/device-form/smart-tv.png" width="80" height="80" alt="Smart TV"></figure>
+                            <em>Smart TV</em>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" name="device" value="Media streamer" data-for="media-streamer">
+                            <figure><img src="assets/images/device-form/media-streamer.png" width="80" height="80" alt="Media streamer"></figure>
+                            <em>Media streamer</em>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" name="device" value="Gaming console" data-for="gaming-console">
+                            <figure><img src="assets/images/device-form/gaming-console.png" width="80" height="80" alt="Gaming console"></figure>
+                            <em>Gaming console</em>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" name="device" value="Browser" data-for="browser">
+                            <figure><img src="assets/images/device-form/browser.png" width="80" height="80" alt="Browser"></figure>
+                            <em>Browser</em>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" name="device" value="Router" data-for="router">
+                            <figure><img src="assets/images/device-form/router.png" width="80" height="80" alt="Router"></figure>
+                            <em>Router</em>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="form-device-step" data-step="2">
+                    <label class="h6 form-device-title"><var>2</var> <span>Choose your device type</span></label>
+                    <div class="form-device-content">
+                      <ul class="form-device-list" id="mobile-device">
+                        <li>
+                          <label>
+                            <input type="radio" name="device-type" value="Mobile device">
+                            <figure><img src="assets/images/device-form/apple.png" width="80" height="80" alt="Apple"></figure>
+                            <em>iPhone &amp; iPad</em>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" name="device-type" value="Computer">
+                            <figure><img src="assets/images/device-form/android.png" width="80" height="80" alt="Android"></figure>
+                            <em>Android</em>
+                          </label>
+                        </li>
+                      </ul>
+                      <ul class="form-device-list" id="computer">
+                        <li>
+                          <label>
+                            <input type="radio" name="device-type" value="Computer">
+                            <figure><img src="assets/images/device-form/windows-11.png" width="80" height="80" alt="Windows 11"></figure>
+                            <em>Windows&nbsp;11</em>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" name="device-type" value="Computer">
+                            <figure><img src="assets/images/device-form/windows-10.png" width="80" height="80" alt="Windows 10"></figure>
+                            <em>Windows&nbsp;10</em>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" name="device-type" value="Mobile device">
+                            <figure><img src="assets/images/device-form/apple.png" width="80" height="80" alt="Mac OS"></figure>
+                            <em>Mac&nbsp;OS</em>
+                          </label>
+                        </li>
+                      </ul>
+                      <ul class="form-device-list" id="smart-tv">
+                        <li>
+                          <label>
+                            <input type="radio" name="device-type" value="LG TV">
+                            <figure><img src="assets/images/device-form/lg-tv.png" width="80" height="80" alt="LG TV"></figure>
+                            <em>LG&nbsp;TV</em>
+                          </label>
+                        </li>
+                      </ul>
+                      <ul class="form-device-list" id="media-streamer">
+                        <li>
+                          <label>
+                            <input type="radio" name="device-type" value="Apple TV">
+                            <figure><img src="assets/images/device-form/apple-tv.png" width="80" height="80" alt="Apple TV"></figure>
+                            <em>Apple TV</em>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" name="device-type" value="Fire TV">
+                            <figure><img src="assets/images/device-form/fire-tv.png" width="80" height="80" alt="Fire TV"></figure>
+                            <em>Fire TV</em>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" name="device-type" value="Android TV">
+                            <figure><img src="assets/images/device-form/android-tv.png" width="80" height="80" alt="Android TV"></figure>
+                            <em>Android TV</em>
+                          </label>
+                        </li>
+                      </ul>
+                      <ul class="form-device-list" id="gaming-console">
+                        <li>
+                          <label>
+                            <input type="radio" name="device-type" value="PlayStation">
+                            <figure><img src="assets/images/device-form/playstation.png" width="80" height="80" alt="PlayStation"></figure>
+                            <em>PlayStation</em>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" name="device-type" value="Xbox">
+                            <figure><img src="assets/images/device-form/xbox.png" width="80" height="80" alt="Xbox"></figure>
+                            <em>Xbox</em>
+                          </label>
+                        </li>
+                      </ul>
+                      <ul class="form-device-list" id="browser">
+                        <li>
+                          <label>
+                            <input type="radio" name="device-type" value="Chrome">
+                            <figure><img src="assets/images/device-form/chrome.png" width="80" height="80" alt="Chrome"></figure>
+                            <em>Chrome</em>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" name="device-type" value="Safari">
+                            <figure><img src="assets/images/device-form/safari.png" width="80" height="80" alt="Safari"></figure>
+                            <em>Safari</em>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" name="device-type" value="Firefox">
+                            <figure><img src="assets/images/device-form/firefox.png" width="80" height="80" alt="Firefox"></figure>
+                            <em>Firefox</em>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" name="device-type" value="Edge">
+                            <figure><img src="assets/images/device-form/edge.png" width="80" height="80" alt="Edge"></figure>
+                            <em>Edge</em>
+                          </label>
+                        </li>
+                      </ul>
+                      <ul class="form-device-list" id="router">
+                        <li>
+                          <label>
+                            <input type="radio" name="device-type" value="Asus ROG">
+                            <figure><img src="assets/images/device-form/asus.png" width="80" height="80" alt="Asus ROG"></figure>
+                            <em>Asus ROG</em>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" name="device-type" value="DD-WRT">
+                            <figure><img src="assets/images/device-form/dd-wrt.png" width="80" height="80" alt="DD-WRT"></figure>
+                            <em>DD-WRT</em>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" name="device-type" value="Google Nest">
+                            <figure><img src="assets/images/device-form/google-nest.png" width="80" height="80" alt="Google Nest"></figure>
+                            <em>Google Nest</em>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" name="device-type" value="Cisco">
+                            <figure><img src="assets/images/device-form/cisco.png" width="80" height="80" alt="Cisco"></figure>
+                            <em>Cisco</em>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" name="device-type" value="Belkin">
+                            <figure><img src="assets/images/device-form/belkin.png" width="80" height="80" alt="Belkin"></figure>
+                            <em>Belkin</em>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" name="device-type" value="TP-Link">
+                            <figure><img src="assets/images/device-form/tp-link.png" width="80" height="80" alt="TP-Link"></figure>
+                            <em>TP-Link</em>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" name="device-type" value="Linksys">
+                            <figure><img src="assets/images/device-form/linksys.png" width="80" height="80" alt="Linksys"></figure>
+                            <em>Linksys</em>
+                          </label>
+                        </li>
+                        <li>
+                          <label>
+                            <input type="radio" name="device-type" value="Vodafone">
+                            <figure><img src="assets/images/device-form/vodafone.png" width="80" height="80" alt="Vodafone"></figure>
+                            <em>Vodafone</em>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="profile-submits mt-3">
+                  <button class="btn btn-secondary btn-sm btn-start">Setup new device</button>
+                  <button class="btn btn-primary btn-sm btn-submit d-none" type="submit" disabled>View setup guide</button>
+                  <button class="btn btn-secondary btn-sm">Recheck if my device is set up</button>
+                  <button class="btn btn-secondary btn-sm btn-loading d-none"><div class="loader loader-smaller"><div></div><div></div><div></div><div></div></div>Checking...</button>
+                </div>
+
+              </form>
+
+            </div>
+          </div>
+        </section>
+
+        <section class="card">
+          <div class="card-header">
+            <h5>How to watch after setup?</h5>
+          </div>
+          <div class="card-body">
+            <div class="profile">
+              <p class="mb-4">Access streaming services through their websites or dedicated apps</p>
+
+              <section class="mb-4">
+                <h6 class="text-white mb-1">Streaming on website</h6>
+                <p>If you don't have the app installed, we recommend streaming on the website. Click the link below to open the streaming service and start watching.</p>
+                <ul class="profile-websites mt-3">
+                  <li><a href="https://www.bbc.com" target="_blank" class="btn btn-outline-secondary">BBC.co.uk</a></li>
+                  <li><a href="https://www.itv.com" target="_blank" class="btn btn-outline-secondary">ITV.com</a></li>
+                  <li><a href="https://www.channel5.com" target="_blank" class="btn btn-outline-secondary">Channel5.com</a></li>
+                  <li><a href="https://www.channel4.com" target="_blank" class="btn btn-outline-secondary">Channel4.com</a></li>
+                </ul>
+              </section>
+
+              <section class="mb-3">
+                <h6 class="text-white mb-1">Streaming in app</h6>
+                <p>If you already have the streaming service's app installed, just open it and start streaming. If not, visit the app store and install it.</p>
+              </section>
+
+              <ul class="profile-apps mb-3">
+                <li>
+                  <span>BBC</span>
+                  <div class="profile-apps-links">
+                    <a href="#" target="_blank" class="btn btn-apple"></a>
+                    <a href="#" target="_blank" class="btn btn-android"></a>
+                  </div>
+                </li>
+                <li>
+                  <span>ITV</span>
+                  <div class="profile-apps-links">
+                    <a href="#" target="_blank" class="btn btn-apple"></a>
+                    <a href="#" target="_blank" class="btn btn-android"></a>
+                  </div>
+                </li>
+                <li>
+                  <span>Channel5</span>
+                  <div class="profile-apps-links">
+                    <a href="#" target="_blank" class="btn btn-apple"></a>
+                    <a href="#" target="_blank" class="btn btn-android"></a>
+                  </div>
+                </li>
+                <li>
+                  <span>Channel4</span>
+                  <div class="profile-apps-links">
+                    <a href="#" target="_blank" class="btn btn-apple"></a>
+                    <a href="#" target="_blank" class="btn btn-android"></a>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="alert alert-primary mb-0" role="alert">
+                <svg class="bi mb-2 mb-md-0" role="img" aria-label="Alert:" xmlns="http://www.w3.org/2000/svg" fill="none" width="16" height="16" viewBox="0 0 16 16"><g clip-path="url(#a)"><path fill="#831ef6" d="M8 14.665A6.667 6.667 0 1 1 8 1.332a6.667 6.667 0 0 1 0 13.333Zm-.667-7.333v4h1.334v-4H7.333Zm0-2.667V6h1.334V4.665H7.333Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v16H0z"/></clipPath></defs></svg>
+                <div>
+                  If your Apple or Google account is set to a region where the streaming service app isn't supported, you may not be able to find it in the app store. You'll need to change your account's region. <a href="#">Learn how to do this</a>.
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<div class="modal modal-language fade" id="language" tabindex="-1" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <p class="modal-title">Select language</p>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul class="language">
+          <li class="active"><a href="#"><strong>English</strong><span>English (EN-US)</span></a></li>
+          <li><a href="#"><strong>Gaeilge</strong><span>Irish (EN-IE)</span></a></li>
+          <li><a href="#"><strong>Aotearoa</strong><span>New Zealand (EN-NZ)</span></a></li>
+          <li><a href="#"><strong>Français</strong><span>French (EN-FR)</span></a></li>
+          <li><a href="#"><strong>Deutsch</strong><span>German (EN-DE)</span></a></li>
+          <li><a href="#"><strong>Svenska</strong><span>Swedish (EN-SE)</span></a></li>
+          <li><a href="#"><strong>English</strong><span>Australian (EN-AU)</span></a></li>
+          <li><a href="#"><strong>Española</strong><span>Spanish (EN-ES)</span></a></li>
+          <li><a href="#"><strong>Italiana</strong><span>Italian (EN-IT)</span></a></li>
+          <li><a href="#"><strong>Netherlands</strong><span>Netherlands (en-NL)</span></a></li>
+          <li><a href="#"><strong>Spain</strong><span>Spain (en-ES)</span></a></li>
+          <li><a href="#"><strong>Sweden</strong><span>Sweden (SE-SE)</span></a></li>
+          <li><a href="#"><strong>Portugal</strong><span>Portugal (PT-PT)</span></a></li>
+          <li><a href="#"><strong>United Arab Emirates</strong><span>UAE (EN-AE)</span></a></li>
+          <li><a href="#"><strong>Greece</strong><span>Greece (GR-GR)</span></a></li>
+          <li><a href="#"><strong>Czech</strong><span>Czech (Cz-CZ)</span></a></li>
+          <li><a href="#"><strong>English</strong><span>English (EN-US)</span></a></li>
+          <li><a href="#"><strong>Gaeilge</strong><span>Irish (EN-IE)</span></a></li>
+          <li><a href="#"><strong>Aotearoa</strong><span>New Zealand (EN-NZ)</span></a></li>
+          <li><a href="#"><strong>Français</strong><span>French (EN-FR)</span></a></li>
+          <li><a href="#"><strong>Deutsch</strong><span>German (EN-DE)</span></a></li>
+          <li><a href="#"><strong>Svenska</strong><span>Swedish (EN-SE)</span></a></li>
+          <li><a href="#"><strong>English</strong><span>Australian (EN-AU)</span></a></li>
+          <li><a href="#"><strong>Española</strong><span>Spanish (EN-ES)</span></a></li>
+          <li><a href="#"><strong>Italiana</strong><span>Italian (EN-IT)</span></a></li>
+          <li><a href="#"><strong>Netherlands</strong><span>Netherlands (en-NL)</span></a></li>
+          <li><a href="#"><strong>Spain</strong><span>Spain (en-ES)</span></a></li>
+          <li><a href="#"><strong>Sweden</strong><span>Sweden (SE-SE)</span></a></li>
+          <li><a href="#"><strong>Portugal</strong><span>Portugal (PT-PT)</span></a></li>
+          <li><a href="#"><strong>United Arab Emirates</strong><span>UAE (EN-AE)</span></a></li>
+          <li><a href="#"><strong>Greece</strong><span>Greece (GR-GR)</span></a></li>
+          <li><a href="#"><strong>Czech</strong><span>Czech (Cz-CZ)</span></a></li>
+          <li><a href="#"><strong>English</strong><span>English (EN-US)</span></a></li>
+          <li><a href="#"><strong>Gaeilge</strong><span>Irish (EN-IE)</span></a></li>
+          <li><a href="#"><strong>Aotearoa</strong><span>New Zealand (EN-NZ)</span></a></li>
+          <li><a href="#"><strong>Français</strong><span>French (EN-FR)</span></a></li>
+          <li><a href="#"><strong>Deutsch</strong><span>German (EN-DE)</span></a></li>
+          <li><a href="#"><strong>Svenska</strong><span>Swedish (EN-SE)</span></a></li>
+          <li><a href="#"><strong>English</strong><span>Australian (EN-AU)</span></a></li>
+          <li><a href="#"><strong>Española</strong><span>Spanish (EN-ES)</span></a></li>
+          <li><a href="#"><strong>Italiana</strong><span>Italian (EN-IT)</span></a></li>
+          <li><a href="#"><strong>Netherlands</strong><span>Netherlands (en-NL)</span></a></li>
+          <li><a href="#"><strong>Spain</strong><span>Spain (en-ES)</span></a></li>
+          <li><a href="#"><strong>Sweden</strong><span>Sweden (SE-SE)</span></a></li>
+          <li><a href="#"><strong>Portugal</strong><span>Portugal (PT-PT)</span></a></li>
+          <li><a href="#"><strong>United Arab Emirates</strong><span>UAE (EN-AE)</span></a></li>
+          <li><a href="#"><strong>Greece</strong><span>Greece (GR-GR)</span></a></li>
+          <li><a href="#"><strong>Czech</strong><span>Czech (Cz-CZ)</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', () => {
+    function centerOverflowX(element) {
+      const clientWidth = element.clientWidth;
+      const active = element.querySelector('.nav-link.active').parentElement;
+      if (active.offsetLeft > 20) {
+        const centerPosition = active.offsetLeft - (clientWidth - active.clientWidth) / 2;
+        element.scrollTo(centerPosition, 0)
+      }
+    }
+
+    const pageNav = document.querySelectorAll('.page-nav .nav');
+    if (window.innerWidth < 768) {
+      if (pageNav) {
+        pageNav.forEach(el => {
+          setTimeout(() => {
+            centerOverflowX(el);
+          }, 300);
+        });
+      }
+    }
+  });
+</script>
+
+</body>
+</html>

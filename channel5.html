@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>LivingAbroad.tv - Streaming Service</title>
+  <meta name="description" content="Watch UK TV 🌎 Abroad">
+  <link rel="canonical" href="https://livingabroad.tv/">
+  <style>
+    :root{--bs-blue:#0d6efd;--bs-indigo:#6610f2;--bs-purple:#6f42c1;--bs-pink:#d63384;--bs-red:#dc3545;--bs-orange:#fd7e14;--bs-yellow:#ffc107;--bs-green:#198754;--bs-teal:#20c997;--bs-cyan:#0dcaf0;--bs-white:#fff;--bs-gray:#6c757d;--bs-gray-dark:#343a40;--bs-primary:#0d6efd;--bs-secondary:#6c757d;--bs-success:#198754;--bs-info:#0dcaf0;--bs-warning:#ffc107;--bs-danger:#dc3545;--bs-light:#f8f9fa;--bs-dark:#212529;--bs-font-sans-serif:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;--bs-gradient:linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));--bs-gutter-x:20px;--bs-font-sans-serif:Inter,sans-serif;--vh:100%;}
+    @media (prefers-reduced-motion:no-preference){
+      :root{scroll-behavior:smooth;}
+    }
+    body{margin:0;font-family:var(--bs-font-sans-serif);font-size:1rem;font-weight:400;line-height:1.5;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent;}
+    h1,h2,h3{line-height:1.2;}
+    @media (min-width:1200px){
+      h1{font-size:2.5rem;}
+    }
+    h2{font-size:calc(1.325rem + .9vw);}
+    @media (min-width:1200px){
+      h2{font-size:2rem;}
+      h3{font-size:1.75rem;}
+    }
+    ul{padding-left:2rem;}
+    ul{margin-top:0;margin-bottom:1rem;}
+    small{font-size:.875em;}
+    img{vertical-align:middle;}
+    .container{width:100%;padding-right:var(--bs-gutter-x,.75rem);padding-left:var(--bs-gutter-x,.75rem);margin-right:auto;margin-left:auto;}
+    @media (min-width:576px){
+      .container{max-width:540px;}
+    }
+    @media (min-width:768px){
+      .container{max-width:720px;}
+    }
+    .btn{display:inline-block;line-height:1.5;text-align:center;text-decoration:none;vertical-align:middle;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;font-size:1rem;}
+    @media (prefers-reduced-motion:reduce){
+      .btn{transition:none;}
+    }
+    .btn:focus{outline:0;box-shadow:0 0 0 .25rem rgba(13,110,253,.25);}
+    .btn:disabled{pointer-events:none;opacity:.65;}
+    .btn-primary:focus{color:#fff;background-color:#0b5ed7;border-color:#0a58ca;box-shadow:0 0 0 .25rem rgba(49,132,253,.5);}
+    .btn-primary:active{color:#fff;background-color:#0a58ca;border-color:#0a53be;}
+    .btn-primary:active:focus{box-shadow:0 0 0 .25rem rgba(49,132,253,.5);}
+    .btn-primary:disabled{color:#fff;background-color:#0d6efd;border-color:#0d6efd;}
+    *,::after,::before{box-sizing:border-box;}
+    html{width:100%;height:100%;background:#170829;scroll-behavior:smooth;}
+    body{width:100%;min-width:360px;min-height:100%;display:block;overflow-x:hidden;position:relative;z-index:1;font:1rem/1.5 var(--bs-font-sans-serif);color:rgba(255,255,255,.72);background:#170829;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-optical-sizing:auto;text-rendering:optimizeLegibility;}
+    @media (min-width:1200px){
+      body{font-size:1.125rem;line-height:1.444em;}
+    }
+    a{color:#fff;text-decoration:underline;}
+    a:hover{color:#fff;text-decoration:none;}
+    p{margin:0 0 1em;}
+    h1,h2,h3{margin:0 0 1em;font-family:Hind,serif;font-weight:500;color:#fff;}
+    h1{margin-bottom:1.125em;font-size:2rem;line-height:1.25;letter-spacing:-.02em;}
+    h2{letter-spacing:-.02em;}
+    @media (min-width:1200px){
+      h1{margin-bottom:.75em;font-size:3.625rem;line-height:1.069em;}
+      h2{font-size:2.5rem;line-height:1.2em;}
+    }
+    h3{font-size:24px;line-height:32px;font-weight:500;letter-spacing:-.02em;}
+    figure{margin:0;}
+    @media (min-width:768px){
+      .container{max-width:728px;}
+    }
+    @media (min-width:992px){
+      .container{max-width:960px;}
+    }
+    @media (min-width:1200px){
+      .container{max-width:1140px;}
+    }
+    @media (min-width:1400px){
+      .container{max-width:1320px;}
+    }
+    .page{padding-top:96px;padding-bottom:64px;position:relative;}
+    @media (min-width:1200px){
+      .page{padding-top:142px;padding-bottom:80px;}
+    }
+    .btn{padding:1rem 1.5rem;border-width:2px;border-radius:2rem;font-weight:500;letter-spacing:-.02em;color:#fff;transition:border-color .2s cubic-bezier(.25,.46,.45,.94),color .2s cubic-bezier(.25,.46,.45,.94),background-color .2s cubic-bezier(.25,.46,.45,.94);box-shadow:none!important;outline:0;}
+    .btn:focus,.btn:hover{color:#fff;}
+    .btn-primary{border-color:#67ff76;color:#2b114b;background:#67ff76;}
+    .btn-primary:focus,.btn-primary:hover{color:#2b114b;border-color:#5ad366;background-color:#5ad366;}
+    .btn-play::after{content:"";overflow:hidden;width:24px;height:24px;margin-left:8px;margin-top:-4px;display:inline-block;vertical-align:middle;position:relative;top:1px;left:1px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' viewBox='0 0 24 24'%3E%3Cg clip-path='url(%23a)'%3E%3Cpath fill='%2367ff76' d='M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10Zm0-2a8 8 0 1 0 0-16.001A8 8 0 0 0 12 20ZM10.622 8.415l4.879 3.252a.4.4 0 0 1 0 .666l-4.88 3.252a.4.4 0 0 1-.621-.332V8.747a.4.4 0 0 1 .622-.332Z'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h24v24H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E") center center/contain no-repeat;filter:brightness(0);transition:filter .2s cubic-bezier(.25,.46,.45,.94);}
+    @media (max-width:767.98px){
+      .hero--new .hero-screen::after{height:120px;margin-top:-5px;}
+    }
+    .hero{margin-bottom:16px;position:relative;z-index:1;}
+    .hero::after{content:"";display:table;clear:both;}
+    @media (min-width:768px){
+      .hero{padding:27px 0 0;margin-bottom:0;}
+    }
+    @media (min-width:1200px){
+      .hero{padding:0;margin-bottom:57px;}
+    }
+    .hero+*{position:relative;z-index:5;}
+    .hero-title{max-width:600px;margin:0 auto;font:500 40px/46px Hind,serif;letter-spacing:-.02em;text-align:center;}
+    @media (min-width:768px){
+      .hero-title{font-size:48px;line-height:52px;}
+    }
+    @media (min-width:1200px){
+      .hero-title{max-width:740px;font-size:58px;line-height:62px;}
+    }
+    .hero-screen{width:100%;max-width:500px;padding:7px;border-radius:3.5px 3.5px 2px 2px;margin:58px auto 125px;position:relative;z-index:1;background:green;}
+    .hero-screen::before{content:"";display:block;overflow:hidden;border-radius:3.5px 3.5px 2px 2px;position:absolute;top:0;right:0;bottom:0;left:0;z-index:2;background:linear-gradient(180deg,#12091f 0,#06030a 100%);}
+    .hero-screen::after{content:"";display:block;overflow:hidden;height:200px;margin-top:-10px;position:absolute;top:100%;right:0;left:0;z-index:15;background:linear-gradient(180deg,rgba(23,8,41,0) 0,#170829 50%,#170829 100%);transform:translateY(-50%);}
+    @media (min-width:768px){
+      .hero-screen{max-width:none;padding:10px;border-radius:6px 6px 3px 3px;margin-top:66px;margin-bottom:86px;}
+      .hero-screen::before{border-radius:6px 6px 3px 3px;}
+      .hero-screen::after{height:300px;margin-top:-20px;}
+    }
+    @media (min-width:1200px){
+      .hero-screen{max-width:846px;padding:18px 20px;border-radius:9.33px 9.33px 4.67px 4.67px;margin-top:64px;}
+      .hero-screen::before{border-radius:8px 8px 4px 4px;}
+      .hero-screen::after{height:400px;}
+    }
+    .hero-image{width:100%;height:100%;margin:0;display:block;position:relative;z-index:5;}
+    .hero-image img{width:100%;height:100%;border-radius:1px;display:block;-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;user-select:none;}
+    .hero-blur{width:calc(100% - 20px);height:calc(100% - 20px);border-radius:1px;display:block;position:absolute;top:10px;right:10px;bottom:10px;left:10px;z-index:1;filter:blur(30px);opacity:.6;-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;user-select:none;}
+    @media (min-width:768px){
+      .hero-blur,.hero-image img{border-radius:1.5px;}
+    }
+    @media (min-width:1200px){
+      .hero-image img{border-radius:2px;}
+      .hero-blur{width:calc(100% - 32px);height:calc(100% - 32px);border-radius:2px;top:12px;right:16px;bottom:16px;left:16px;}
+    }
+    .hero-blur img{width:100%;height:auto;display:block;position:relative;}
+    @media (max-width:991.98px){
+      .hero-blur img{max-width:100vw;position:absolute;top:50%;left:50%;transform:translate3d(-50%,-50%,0);}
+    }
+    .hero-button{position:absolute;right:0;bottom:0;left:0;z-index:10;}
+    @media (min-width:768px){
+      .hero-button{min-width:260px;bottom:140px;left:50%;right:auto;transform:translateX(-50%);}
+    }
+    .hero-list{max-width:320px;padding:0;margin:33px auto 0;list-style:none;display:flex;justify-content:center;flex-wrap:wrap;gap:8px;letter-spacing:-.01em;position:relative;z-index:10;color:rgba(255,255,255,.72);}
+    .hero-list li{padding-left:26px;white-space:nowrap;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' viewBox='0 0 24 24'%3E%3Cg clip-path='url(%23a)'%3E%3Cpath fill='%2367ff76' d='m10.333 14.643 7.66-7.66 1.179 1.178L10.332 17 5.03 11.697l1.179-1.179z'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M2 2h20v20H2z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E") top left no-repeat;}
+    @media (min-width:768px){
+      .hero-list{max-width:none;gap:20px;}
+    }
+    @media (min-width:1200px){
+      .hero-button{bottom:149px;}
+      .hero-list{margin-top:32px;font-size:16px;}
+    }
+    .hero-rating{width:164px;height:64px;margin:0 auto 12px;display:block;position:relative;z-index:5;color:#fff;text-align:center;background:url(http://localhost:3002/assets/images/rating.svg) center center no-repeat;cursor:default;-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;user-select:none;}
+    .hero-rating p{padding:1px 0;margin:0;font-size:16px;line-height:24px;font-weight:600;}
+    .hero-rating small{margin-top:24px;display:block;font-size:12px;line-height:14px;color:rgba(255,255,255,.56);}
+    .hero--new{padding-top:0;margin-bottom:0;text-align:center;}
+    @media (min-width:768px){
+      .hero-rating{margin-top:-74px;}
+      .hero+.page-section{padding-top:0;}
+      .hero--new{margin-bottom:64px;}
+    }
+    @media (min-width:1200px){
+      .hero-rating{margin-top:-190px;}
+      .hero--new{margin-bottom:78px;}
+    }
+    .hero--new .hero-screen{margin-top:20px;margin-bottom:22px;}
+    @media (min-width:768px){
+      .hero--new .hero-screen{max-width:527px;margin-top:44px;}
+    }
+    @media (min-width:1200px){
+      .hero--new .hero-screen{max-width:988px;margin-top:16px;}
+    }
+    .hero--new .hero-title{font-size:32px;line-height:40px;position:relative;z-index:5;}
+    @media (min-width:768px){
+      .hero--new .hero-screen::after{margin-top:-30px;right:-100px;left:-100px;}
+      .hero--new .hero-title{max-width:280px;margin-right:auto;margin-left:auto;font-size:36px;line-height:44px;letter-spacing:-.02em;color:rgba(255,255,255,.96);}
+    }
+    .hero--new .hero-button{padding-right:2.5rem;padding-left:2.5rem;margin:24px auto 0;position:relative;top:0;right:0;bottom:0;left:0;transform:none;}
+    @media (min-width:1200px){
+      .hero--new .hero-title{font-size:40px;line-height:48px;}
+    }
+    .channels-entry{margin-bottom:24px;display:block;text-decoration:none;outline:0;}
+    .channels-image{padding:21px;border-radius:4px;margin:0;display:block;position:relative;background:#f9f5ff;}
+    .channels-image::before{content:"";overflow:hidden;display:none;border-radius:3px;position:absolute;top:0;right:0;bottom:0;left:0;z-index:2;background:center center no-repeat #410f7a;}
+    .channels-image img{width:72px;height:72px;margin:0 auto;display:block;position:relative;z-index:1;-webkit-user-drag:none;user-drag:none;-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;user-select:none;}
+    @media (min-width:992px) and (max-width:1199.98px){
+      .channels-image{padding-top:27px;padding-bottom:27px;}
+      .channels-image img{width:96px;height:96px;}
+    }
+    @media (min-width:1400px){
+      .channels-image{padding:27px;}
+      .channels-image img{width:96px;height:96px;}
+    }
+    @media (min-width:768px){
+      .page-section-header{max-width:628px;margin-right:auto;margin-left:auto;}
+    }
+    .page-section{padding-top:64px;padding-bottom:64px;}
+    .page-section-header{margin-bottom:48px;text-align:center;}
+    .page-section-heading{margin-bottom:8px;font:500 32px/40px Hind,serif;letter-spacing:-.02em;position:relative;z-index:1;}
+    @media (min-width:768px){
+      .page-section-heading{font-size:36px;line-height:44px;}
+    }
+    @media (min-width:1200px){
+      .page-section{padding-top:80px;padding-bottom:80px;}
+      .page-section-heading{font-size:40px;line-height:48px;}
+    }
+    .page-section-subheading{font-size:18px;line-height:26px;letter-spacing:.01em;color:rgba(255,255,255,.72);}
+    .block{padding:40px 34px 33px;border-radius:16px;background:center center no-repeat #29094d;}
+    @media (min-width:768px){
+      .block{width:100%;max-width:800px;padding:40px;margin:0 auto;display:flex;align-items:center;gap:50px;}
+    }
+    @media (min-width:1200px){
+      .block{width:calc(33.3% - 16px);flex-direction:column;gap:0;}
+    }
+    .blocks{display:flex;flex-direction:column;gap:24px;}
+    @media (min-width:1200px){
+      .blocks{flex-direction:row;flex-wrap:wrap;}
+    }
+    .block-header{width:100%;margin:0 auto 33px;position:relative;}
+    @media (min-width:768px){
+      .block-header{min-width:228px;margin-bottom:0;flex:0;}
+    }
+    @media (min-width:768px) and (max-width:991.98px){
+      .block-header{left:-15px;}
+    }
+    @media (max-width:991.98px){
+      .block-header br{display:none;}
+    }
+    @media (min-width:992px){
+      .block-header{min-width:320px;}
+    }
+    @media (min-width:1200px){
+      .block-header{max-width:300px;min-width:0;margin-bottom:40px;}
+      .block-sign-up{width:100%;min-height:292px;}
+    }
+    .block-header>:last-child{margin-bottom:0;}
+    .block-heading{margin-bottom:8px;text-align:center;}
+    .block-subheading{font-size:16px;line-height:24px;color:rgba(255,255,255,.72);text-align:center;}
+    @media (max-width:767.98px){
+      .block-subheading{margin-right:-10px;margin-left:-10px;}
+    }
+    .block-sign-up{padding:56px 35px;border-radius:16px;margin:0;display:flex;flex-direction:column;justify-content:center;align-items:center;flex:1;background:#20073d;}
+    @media (min-width:768px){
+      .block-sign-up{min-height:292px;padding:40px;}
+    }
+    .block-sign-up img{width:100%;max-width:250px;height:auto;margin:0 auto;display:block;-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;user-select:none;}
+    .block-set-up{padding:0;margin:35px -34px -7px 0;overflow:hidden;}
+    @media (min-width:768px){
+      .block-set-up{width:calc(100% + 40px);margin:0 -40px -10px 0;}
+      .block .channels-list{width:100%;}
+    }
+    .block-set-up img{display:block;-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;user-select:none;}
+    @media (max-width:767.98px){
+      .block-set-up img{width:auto;min-width:100%;height:auto;aspect-ratio:360/303;}
+    }
+    .block .channels-list{margin-bottom:1px;display:flex;flex-direction:column;align-items:center;}
+    .block .channels-entry{flex-shrink:0;margin-bottom:44px;position:relative;z-index:10;}
+    .block .channels-entry:first-of-type{position:relative;z-index:9;}
+    .block .channels-entry:first-of-type::after{content:"";display:block;overflow:hidden;width:14px;height:58px;margin-top:-3px;margin-left:-11px;background:url("data:image/svg+xml,%3Csvg width='16' height='58' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 48v6.632L8 58l-8-3.368V48l8 3.368L16 48Z' fill='%23F9F5FF' fill-opacity='.5'/%3E%3Cpath d='M16 36v6.632L8 46l-8-3.368V36l8 3.368L16 36Z' fill='%23F9F5FF' fill-opacity='.4'/%3E%3Cpath d='M16 24v6.632L8 34l-8-3.368V24l8 3.368L16 24Z' fill='%23F9F5FF' fill-opacity='.3'/%3E%3Cpath d='M16 12v6.632L8 22l-8-3.368V12l8 3.368L16 12Z' fill='%23F9F5FF' fill-opacity='.2'/%3E%3Cpath d='M16 0v6.632L8 10 0 6.632V0l8 3.368L16 0Z' fill='%23F9F5FF' fill-opacity='.1'/%3E%3C/svg%3E") 0 0/contain no-repeat;position:absolute;top:100%;left:50%;z-index:-1;}
+    .block .channels-entry:last-of-type{margin-bottom:0;}
+    .block .channels-image{padding:12px 29px;border-radius:8px;}
+    .block .channels-image img{width:80px;height:80px;}
+    .block .channels-list--alt{padding-top:8px;padding-bottom:8px;flex-direction:row;flex-wrap:wrap;gap:8px 10px;}
+    .block .channels-list--alt .channels-entry{width:calc(50% - 5px);margin:0;}
+    .block .channels-list--alt .channels-entry:first-of-type::after{display:none;}
+    .block .channels-list--alt .channels-image{min-height:114px;padding:12px;border-radius:4px;display:flex;justify-content:center;align-items:center;}
+    @media (min-width:768px){
+      .block .channels-entry{margin-bottom:50px;}
+      .block .channels-entry:first-of-type::after{width:16px;margin-left:-13px;}
+      .block .channels-image{padding-right:32px;padding-left:32px;}
+      .block .channels-image img{width:96px;height:96px;}
+      .block .channels-list--alt .channels-image{min-height:133px;}
+    }
+    @media (min-width:1200px){
+      .block .channels-entry{margin-bottom:52px;}
+    }
+    .navbar,.footer,.page-section,.cta {display: none;}
+    .hero + .page-section {display: block;}
+  </style>
+    <link rel="preload" href="/assets/fonts/Inter.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/assets/fonts/Hind-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/assets/fonts/Hind-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/assets/fonts/Hind-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/assets/fonts/Hind-Semibold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/assets/fonts/Hind-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <style>
+    @font-face {font-family: 'Inter';font-style: normal;font-weight: 100 900;font-display: swap;src: url('/assets/fonts/Inter.woff2') format('woff2');unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+    @font-face {font-family: 'Hind';font-style: normal;font-weight: 300;font-display: swap;src: url('/assets/fonts/Hind-Light.woff2') format('woff2');unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+    @font-face {font-family: 'Hind';font-style: normal;font-weight: 400;font-display: swap;src: url('/assets/fonts/Hind-Regular.woff2') format('woff2');unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+    @font-face {font-family: 'Hind';font-style: normal;font-weight: 500;font-display: swap;src: url('/assets/fonts/Hind-Medium.woff2') format('woff2');unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+    @font-face {font-family: 'Hind';font-style: normal;font-weight: 600;font-display: swap;src: url('/assets/fonts/Hind-Semibold.woff2') format('woff2');unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+    @font-face {font-family: 'Hind';font-style: normal;font-weight: 700;font-display: swap;src: url('/assets/fonts/Hind-Bold.woff2') format('woff2');unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+  </style>
+
+  <link rel="preload" href="assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="assets/css/style.css"></noscript>
+
+  <script src="/assets/js/bootstrap.min.js" defer></script>
+  <script src="/assets/js/choices.min.js" defer></script>
+  <script src="/assets/js/main.js" defer></script>
+</head>
+<body>
+
+<header class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a href="./" class="navbar-brand">
+      <svg width="28" height="28" viewBox="0 0 28 28"><path fill="#0385fc" d="M27.999 14c0 7.731-6.268 14-14 14C6.268 28 0 21.73 0 14 0 6.268 6.268 0 14 0c7.73 0 13.999 6.268 13.999 14Z"/><path fill="#67FF76" d="m3.877 14.08-3.006.322.325 2.792 1.165 3.086 1.868 2.604 2.438 2.2 3.141 1.45 2.492.59.812-1.315v-1.396l-1.3-.885-1.625-.832-1.029-1.61v-1.504l1.03-1.368 1.001-1.691v-1.691l-1.38-2.12-1.599-1.53-1.787-.322-1.137 1.368-1.409 1.852Z"/><path fill="#67FF76" d="M5.881 5.68V3.8l1.923-1.288 1.652-.779 1.896-.51 1.814-.349h2.059l.975.86.352 1.073-.732.564-1.679.429-.433 1.53.433 1.61 1.49 1.476 1.923 1.128 2.356.51 2.194.724 1.218 1.154.298 2.12-.542 2.201-.974 2.711-1.436 2.335-1.923 1.423-2.193.724-1.11-.51v-1.959l.189-2.684-.406-3.892-1.68-3.623-2.626-1.637-2.681-.564-1.842-1.154L5.88 5.68Z"/><path fill="#230E3D" fill-rule="evenodd" d="m7.315 11.392-.007-.004a1.29 1.29 0 0 0-.979-.105c-.338.108-.787.434-1.108 1.388-.44 1.309-1.497 1.922-2.541 2.163a5.976 5.976 0 0 1-1.55.136c.436 5.87 4.8 10.65 10.474 11.714l.129.023c.671-.722.762-1.24.712-1.552-.068-.418-.435-.76-.839-.942-.94-.347-2.217-1.087-2.9-2.226a3.159 3.159 0 0 1-.444-2.075c.103-.78.494-1.596 1.222-2.441.616-.716.87-1.373.918-1.957.047-.587-.111-1.152-.411-1.685-.611-1.086-1.77-1.965-2.67-2.434l-.006-.003Zm4.792 16.48c-.237-.032-.472-.07-.705-.113C5.178 26.59.407 21.305.025 14.839a14.195 14.195 0 0 1-.025-.84A13.975 13.975 0 0 1 6.261 2.333 13.934 13.934 0 0 1 14.52.01c.302.011.601.032.898.061C22.483.782 28 6.747 28 14c0 7.731-6.268 14-14 14-.642 0-1.273-.044-1.892-.128Zm4.37-26.54C22.419 2.487 26.905 7.72 26.905 14c0 7.127-5.778 12.905-12.906 12.905-.335 0-.666-.012-.995-.037.457-.664.617-1.296.52-1.888-.152-.943-.917-1.522-1.492-1.774l-.016-.007-.016-.006c-.827-.303-1.85-.926-2.356-1.769a2.066 2.066 0 0 1-.298-1.368c.069-.516.337-1.141.966-1.871.74-.86 1.111-1.73 1.18-2.583.069-.85-.166-1.632-.548-2.31-.752-1.335-2.107-2.339-3.111-2.864a2.381 2.381 0 0 0-1.836-.187c-.753.24-1.412.89-1.812 2.08-.281.835-.942 1.26-1.751 1.447a4.946 4.946 0 0 1-1.34.105 12.864 12.864 0 0 1 3.85-9.07c-.032.462-.006.932.105 1.39a3.533 3.533 0 0 0 1.355 2.041c.741.552 1.77.922 3.138 1.06 2.904.293 4.307 2.544 4.919 5.204.612 2.66.37 5.52.127 6.57-.226.972-.143 1.701.177 2.209.323.51.825.7 1.22.703 1.41.048 4.475-.754 6.135-4.192.974-2.016 1.887-4.404 1.883-6.37-.002-.996-.239-1.946-.886-2.675-.651-.732-1.643-1.158-2.981-1.253-3.731-.267-5.524-2.55-5.95-3.579-.103-.332-.151-.831.002-1.26.14-.39.466-.79 1.279-.941.572-.107 1.064-.358 1.268-.853.194-.47.042-.956-.142-1.316a3.236 3.236 0 0 0-.116-.21Zm-1.55-.205c.29.303.546.623.692.91.138.271.113.384.106.402-.002.004-.012.029-.07.065a1.135 1.135 0 0 1-.389.13c-1.177.22-1.831.875-2.108 1.649-.26.728-.165 1.495-.007 1.983l.006.018.007.019c.554 1.369 2.685 3.977 6.894 4.278 1.15.082 1.836.432 2.241.889.41.46.609 1.114.61 1.95.004 1.697-.806 3.89-1.774 5.893-1.442 2.985-4.065 3.613-5.12 3.573h-.02c-.07 0-.205-.036-.305-.194-.104-.165-.227-.557-.037-1.378.277-1.193.527-4.224-.126-7.06-.653-2.836-2.27-5.685-5.875-6.048-1.235-.125-2.057-.448-2.594-.849a2.44 2.44 0 0 1-.946-1.422c-.177-.727-.065-1.548.173-2.282a12.84 12.84 0 0 1 8.643-2.526Z" clip-rule="evenodd"/></svg>
+      <span>LivingAbroad.tv</span>
+    </a>
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="streaming-services.html">Streaming services</a></li>
+        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="channels.html">Channels</a></li>
+        <li class="nav-item"><a class="nav-link" href="tv-guide.html">TV guide</a></li>
+      </ul>
+      <div class="navbar-buttons">
+        <a href="login.html" class="btn btn-outline-primary">Log in</a>
+        <a href="#" class="btn btn-primary">Try for free</a>
+      </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Navigation"><span class="navbar-toggler-icon"></span></button>
+  </div>
+</header>
+
+<main class="page">
+  <div class="container">
+
+    <header class="hero hero--new">
+      <div class="hero-screen">
+        <picture class="hero-image">
+          <source media="(min-width: 768px)"  srcset="assets/images/screen-channel5.webp 1x, assets/images/screen-channel5@2x.webp 2x, assets/images/screen-channel5@3x.webp 3x" width="814" height="464">
+          <img src="assets/images/screen-channel5-mobile.webp" srcset="assets/images/screen-channel5-mobile.webp 1x, assets/images/screen-channel5-mobile@2x.webp 2x, assets/images/screen-channel5-mobile@3x.webp 3x" width="358" height="160" fetchpriority="high" alt="">
+        </picture>
+        <picture class="hero-blur">
+          <source media="(min-width: 768px)"  srcset="assets/images/screen-channel5.webp 1x, assets/images/screen-channel5@2x.webp 2x, assets/images/screen-channel5@3x.webp 3x" width="814" height="464">
+          <img src="assets/images/screen-channel5-mobile.webp" srcset="assets/images/screen-channel5-mobile.webp 1x, assets/images/screen-channel5-mobile@2x.webp 2x, assets/images/screen-channel5-mobile@3x.webp 3x" width="358" height="204" fetchpriority="high" alt="">
+        </picture>
+      </div>
+      <div class="hero-rating">
+        <p>Rated 4.9</p>
+        <small>from 172 users</small>
+      </div>
+      <h1 class="hero-title">Watch Channel5 from&nbsp;abroad</h1>
+      <a href="#" class="btn btn-primary btn-play hero-button">Start Watching Free</a>
+      <ul class="hero-list">
+        <li>100% free</li>
+        <li>Not payment requited</li>
+        <li>Easy configuration</li>
+        <li>Instant acccess</li>
+      </ul>
+    </header>
+
+    <section class="page-section">
+      <div class="page-section-header">
+        <h2 class="page-section-heading">Easy to get started</h2>
+        <p class="page-section-subheading">Start watching your favorites channels in just few steps</p>
+      </div>
+      <div class="blocks">
+        <section class="block">
+          <header class="block-header">
+            <h3 class="block-heading">Sign up for free</h3>
+            <p class="block-subheading">Quick sign up with Google, Facebook or&nbsp;Email</p>
+          </header>
+          <figure class="block-sign-up">
+            <img srcset="assets/images/sign-up.webp 1x,  assets/images/sign-up@2x.webp 2x, assets/images/sign-up@3x.webp 3x" src="assets/images/sign-up.webp" width="250" height="164" alt="Sign Up" loading="lazy">
+          </figure>
+        </section>
+        <section class="block">
+          <header class="block-header">
+            <h3 class="block-heading">Set up in 1 minute</h3>
+            <p class="block-subheading">Follow our setup guide – it works <br>on any device</p>
+          </header>
+          <figure class="block-set-up">
+            <picture>
+              <source srcset="assets/images/set-up-mobile.webp 1x, assets/images/set-up-mobile@2x.webp 2x, assets/images/set-up-mobile@3x.webp 3x" media="(max-width: 767px)" width="360" height="303">
+              <source srcset="assets/images/set-up.webp 1x, assets/images/set-up@2x.webp 2x, assets/images/set-up@3x.webp 3x">
+              <img srcset="assets/images/set-up.webp 1x,  assets/images/set-up@2x.webp 2x, assets/images/set-up@3x.webp 3x" src="assets/images/set-up.webp" width="666" height="303" alt="Set up" loading="lazy">
+            </picture>
+          </figure>
+        </section>
+        <section class="block">
+          <header class="block-header">
+            <h3 class="block-heading">Enjoy watching</h3>
+            <p class="block-subheading">Watch your favorite streaming services and more than 40+ live channels</p>
+          </header>
+          <div class="channels-list channels-list--alt">
+            <a href="channel.html" class="channels-entry">
+              <figure class="channels-image" style="background-color: #080411;"><img srcset="assets/images/channels/bbc-iplayer.webp 1x, assets/images/channels/bbc-iplayer@2x.webp 2x, assets/images/channels/bbc-iplayer@3x.webp 3x" src="assets/images/channels/bbc-iplayer-2.webp" width="96" height="96" alt="BBC iPlayer"></figure>
+            </a>
+            <a href="channel.html" class="channels-entry">
+              <figure class="channels-image" style="background-color: #a1f681;"><img srcset="assets/images/channels/channel4.webp 1x, assets/images/channels/channel4@2x.webp 2x, assets/images/channels/channel4@3x.webp 3x" src="assets/images/channels/channel4.webp" width="96" height="96" alt="Channel 4"></figure>
+            </a>
+            <a href="channel.html" class="channels-entry">
+              <figure class="channels-image" style="background-color: #deeb52;"><img srcset="assets/images/channels/itvx.webp 1x, assets/images/channels/itvx@2x.webp 2x, assets/images/channels/itvx@3x.webp 3x" src="assets/images/channels/itvx.webp" width="96" height="96" alt="ITVX"></figure>
+            </a>
+            <a href="channel.html" class="channels-entry">
+              <figure class="channels-image" style="background-color: #f3ed2a;"><img srcset="assets/images/channels/channel5.webp 1x, assets/images/channels/channel5@2x.webp 2x, assets/images/channels/channel5@3x.webp 3x" src="assets/images/channels/channel5.webp" width="96" height="96" alt="Channel 5"></figure>
+            </a>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="page-section-header">
+        <h2 class="page-section-heading">How does it work?</h2>
+        <p class="page-section-subheading">LivingAbroad.tv Smart DNS helps streaming services think you’re in another country</p>
+      </div>
+      <div class="how-it-works">
+        <picture class="how-it-works-image">
+          <source media="(min-width: 992px)"  srcset="assets/images/screen-3.webp 1x, assets/images/screen-3@2x.webp 2x, assets/images/screen-3@3x.webp 3x" width="954" height="480">
+          <source media="(min-width: 768px)"  srcset="assets/images/screen-3-tablet.webp 1x, assets/images/screen-3-tablet@2x.webp 2x, assets/images/screen-3-tablet@3x.webp 3x" width="688" height="482">
+          <img src="assets/images/screen-3-mobile.webp" srcset="assets/images/screen-3-mobile.webp 1x, assets/images/screen-3-mobile@2x.webp 2x, assets/images/screen-3-mobile@3x.webp 3x" width="372" height="260" alt="Screen">
+        </picture>
+        <div class="how-it-works-video"><img src="assets/images/video.webp" srcset="assets/images/video.webp 1x, assets/images/video@2x.webp 2x, assets/images/video@3x.webp 3x" alt="Video"></div>
+        <div class="how-it-works-logo" style="background-color: #f3ed2a;">
+          <img srcset="assets/images/channels/channel5.webp 1x, assets/images/channels/channel5@2x.webp 2x, assets/images/channels/channel5@3x.webp 3x" src="assets/images/channels/channel5.webp" width="96" height="96" alt="Channel 5">
+        </div>
+        <div class="how-it-works-flag-1"><img src="assets/images/flags/canada.webp" srcset="assets/images/flags/canada.webp 1x, assets/images/flags/canada@2x.webp 2x, assets/images/flags/canada@3x.webp 3x" width="34" height="20" alt="Canada"> Your device</div>
+        <div class="how-it-works-flag-2"><img src="assets/images/flags/uk.webp" srcset="assets/images/flags/uk.webp 1x, assets/images/flags/uk@2x.webp 2x, assets/images/flags/uk@3x.webp 3x" width="34" height="20" alt="UK"> Streaming Service</div>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="page-section-header">
+        <h2 class="page-section-heading">Watch all 5 Channel5 channels live</h2>
+        <p class="page-section-subheading">Stay up to date with the latest news, sports, and your favourite shows in real time</p>
+      </div>
+      <div class="channels channels--alt">
+        <div class="channels-list">
+          <div class="row">
+            <div class="col-6 col-sm-4 col-lg-3">
+              <a href="channel5.html" class="channels-entry">
+                <figure class="channels-image" style="background-color: #f3ed2a;"><img srcset="assets/images/channels/channel5.webp 1x, assets/images/channels/channel5@2x.webp 2x, assets/images/channels/channel5@3x.webp 3x" src="assets/images/channels/channel5.webp" width="96" height="96" alt="Channel 5"></figure>
+              </a>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-3">
+              <a href="channel.html" class="channels-entry">
+                <figure class="channels-image" style="background-color: #00ce62;"><img srcset="assets/images/channels/5star.webp 1x, assets/images/channels/5star@2x.webp 2x, assets/images/channels/5star@3x.webp 3x" src="assets/images/channels/5star.webp" width="96" height="96" alt="5Star"></figure>
+              </a>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-3">
+              <a href="channel.html" class="channels-entry">
+                <figure class="channels-image" style="background-color: #fb2c32;"><img srcset="assets/images/channels/5usa.webp 1x, assets/images/channels/5usa@2x.webp 2x, assets/images/channels/5usa@3x.webp 3x" src="assets/images/channels/5usa.webp" width="96" height="96" alt="5USA"></figure>
+              </a>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-3">
+              <a href="channel.html" class="channels-entry">
+                <figure class="channels-image" style="background-color: #ff3b01;"><img srcset="assets/images/channels/5action.webp 1x, assets/images/channels/5action@2x.webp 2x, assets/images/channels/5action@3x.webp 3x" src="assets/images/channels/5action.webp" width="96" height="96" alt="5Action"></figure>
+              </a>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-3">
+              <a href="channel.html" class="channels-entry">
+                <figure class="channels-image" style="background-color: #fbc960;"><img srcset="assets/images/channels/5select.webp 1x, assets/images/channels/5select@2x.webp 2x, assets/images/channels/5select@3x.webp 3x" src="assets/images/channels/5select.webp" width="96" height="96" alt="5Select"></figure>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="page-section-header">
+        <h2 class="page-section-heading">Watch on any device</h2>
+        <p class="page-section-subheading">iOS phones, iPads and tablets, Android phones, Mac, Linux and Windows desktops/laptops, Google Chromecasts and Chromebooks Televisions</p>
+      </div>
+      <div class="platforms">
+        <ul class="platforms-logos">
+          <li><img src="assets/images/platforms/android-tv.svg" width="121" height="48" alt="Android TV"></li>
+          <li><img src="assets/images/platforms/apple.svg" width="49" height="48" alt="Apple"></li>
+          <li><img src="assets/images/platforms/windows.svg" width="161" height="48" alt="Windows"></li>
+          <li><img src="assets/images/platforms/android.svg" width="65" height="48" alt="Android"></li>
+          <li><img src="assets/images/platforms/ps.svg" width="56" height="48" alt="Playstation"></li>
+          <li><img src="assets/images/platforms/xbox.svg" width="49" height="48" alt="xBox"></li>
+          <li><img src="assets/images/platforms/firestick.svg" width="111" height="48" alt="Fire TV Stick"></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h3 class="cta-heading">Start your free <span class="text-nowrap">7-day</span> trial</h3>
+      <p>Try LivingAbroad.tv today with <span class="text-nowrap">7-day</span> free trial. No credit card required.</p>
+      <a href="#" class="btn btn-dark btn-play cta-button">Start Watching Free</a>
+    </section>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12 col-xl-4">
+        <a href="./" class="footer-brand"><img src="assets/images/svg/ic.svg" width="28" height="28" alt=""> LivingAbroad.tv</a>
+        <p class="footer-subtitle">Watch Your Favorite Streaming Service from Anywhere</p>
+      </div>
+      <div class="col col-12 col-xl-8">
+        <ul class="footer-nav">
+          <li><a href="streaming-services.html" class="nav-link">Streaming services</a></li>
+          <li><a href="channels.html" class="nav-link">Channels</a></li>
+          <li><a href="tv-guide.html" class="nav-link">TV guide</a></li>
+          <li><a href="#" class="nav-link">Support</a></li>
+          <li><a href="terms.html" class="nav-link">Privacy policy</a></li>
+          <li><a href="terms.html" class="nav-link">Terms of use</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-12 col-md-4">
+        <div class="footer-review">
+          <span class="footer-review-result">Rated 4.9</span>
+          <div class="footer-review-rating">
+            <span class="footer-review-stars"></span>
+          </div>
+          <span class="footer-review-result">from 172 users</span>
+        </div>
+      </div>
+      <div class="col col-12 col-md-4">
+        <div class="footer-copyright">&copy; 2025 LivingAbroad.tv. All&nbsp;rights are reserved.</div>
+      </div>
+      <div class="col col-12 col-md-4">
+        <div class="footer-lang">
+          <div class="dropdown">
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#language">Espana - Spain</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">{
+  "@context": "http://schema.org/",
+  "@type": "Product",
+  "url": "https://livingabroad.tv",
+  "name": "Living Abroad TV",
+  "aggregateRating": {
+    "@type": "aggregateRating",
+    "ratingValue": "4.9",
+    "bestRating": "5",
+    "ratingCount": "172"
+  }
+}</script>
+<div class="modal modal-language fade" id="language" tabindex="-1" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <p class="modal-title">Select language</p>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul class="language">
+          <li class="active"><a href="#"><strong>English</strong><span>English (EN-US)</span></a></li>
+          <li><a href="#"><strong>Gaeilge</strong><span>Irish (EN-IE)</span></a></li>
+          <li><a href="#"><strong>Aotearoa</strong><span>New Zealand (EN-NZ)</span></a></li>
+          <li><a href="#"><strong>Français</strong><span>French (EN-FR)</span></a></li>
+          <li><a href="#"><strong>Deutsch</strong><span>German (EN-DE)</span></a></li>
+          <li><a href="#"><strong>Svenska</strong><span>Swedish (EN-SE)</span></a></li>
+          <li><a href="#"><strong>English</strong><span>Australian (EN-AU)</span></a></li>
+          <li><a href="#"><strong>Española</strong><span>Spanish (EN-ES)</span></a></li>
+          <li><a href="#"><strong>Italiana</strong><span>Italian (EN-IT)</span></a></li>
+          <li><a href="#"><strong>Netherlands</strong><span>Netherlands (en-NL)</span></a></li>
+          <li><a href="#"><strong>Spain</strong><span>Spain (en-ES)</span></a></li>
+          <li><a href="#"><strong>Sweden</strong><span>Sweden (SE-SE)</span></a></li>
+          <li><a href="#"><strong>Portugal</strong><span>Portugal (PT-PT)</span></a></li>
+          <li><a href="#"><strong>United Arab Emirates</strong><span>UAE (EN-AE)</span></a></li>
+          <li><a href="#"><strong>Greece</strong><span>Greece (GR-GR)</span></a></li>
+          <li><a href="#"><strong>Czech</strong><span>Czech (Cz-CZ)</span></a></li>
+          <li><a href="#"><strong>English</strong><span>English (EN-US)</span></a></li>
+          <li><a href="#"><strong>Gaeilge</strong><span>Irish (EN-IE)</span></a></li>
+          <li><a href="#"><strong>Aotearoa</strong><span>New Zealand (EN-NZ)</span></a></li>
+          <li><a href="#"><strong>Français</strong><span>French (EN-FR)</span></a></li>
+          <li><a href="#"><strong>Deutsch</strong><span>German (EN-DE)</span></a></li>
+          <li><a href="#"><strong>Svenska</strong><span>Swedish (EN-SE)</span></a></li>
+          <li><a href="#"><strong>English</strong><span>Australian (EN-AU)</span></a></li>
+          <li><a href="#"><strong>Española</strong><span>Spanish (EN-ES)</span></a></li>
+          <li><a href="#"><strong>Italiana</strong><span>Italian (EN-IT)</span></a></li>
+          <li><a href="#"><strong>Netherlands</strong><span>Netherlands (en-NL)</span></a></li>
+          <li><a href="#"><strong>Spain</strong><span>Spain (en-ES)</span></a></li>
+          <li><a href="#"><strong>Sweden</strong><span>Sweden (SE-SE)</span></a></li>
+          <li><a href="#"><strong>Portugal</strong><span>Portugal (PT-PT)</span></a></li>
+          <li><a href="#"><strong>United Arab Emirates</strong><span>UAE (EN-AE)</span></a></li>
+          <li><a href="#"><strong>Greece</strong><span>Greece (GR-GR)</span></a></li>
+          <li><a href="#"><strong>Czech</strong><span>Czech (Cz-CZ)</span></a></li>
+          <li><a href="#"><strong>English</strong><span>English (EN-US)</span></a></li>
+          <li><a href="#"><strong>Gaeilge</strong><span>Irish (EN-IE)</span></a></li>
+          <li><a href="#"><strong>Aotearoa</strong><span>New Zealand (EN-NZ)</span></a></li>
+          <li><a href="#"><strong>Français</strong><span>French (EN-FR)</span></a></li>
+          <li><a href="#"><strong>Deutsch</strong><span>German (EN-DE)</span></a></li>
+          <li><a href="#"><strong>Svenska</strong><span>Swedish (EN-SE)</span></a></li>
+          <li><a href="#"><strong>English</strong><span>Australian (EN-AU)</span></a></li>
+          <li><a href="#"><strong>Española</strong><span>Spanish (EN-ES)</span></a></li>
+          <li><a href="#"><strong>Italiana</strong><span>Italian (EN-IT)</span></a></li>
+          <li><a href="#"><strong>Netherlands</strong><span>Netherlands (en-NL)</span></a></li>
+          <li><a href="#"><strong>Spain</strong><span>Spain (en-ES)</span></a></li>
+          <li><a href="#"><strong>Sweden</strong><span>Sweden (SE-SE)</span></a></li>
+          <li><a href="#"><strong>Portugal</strong><span>Portugal (PT-PT)</span></a></li>
+          <li><a href="#"><strong>United Arab Emirates</strong><span>UAE (EN-AE)</span></a></li>
+          <li><a href="#"><strong>Greece</strong><span>Greece (GR-GR)</span></a></li>
+          <li><a href="#"><strong>Czech</strong><span>Czech (Cz-CZ)</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
